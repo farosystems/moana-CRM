@@ -9,6 +9,7 @@ import { VendedorModal } from "./vendedor-modal"
 import { Plus, Search } from "lucide-react"
 import { vendedoresQueries, sucursalesQueries } from "@/lib/supabase/queries"
 import type { Vendedor, Sucursal } from "@/types"
+import { toast } from "sonner"
 
 export function VendedoresModule() {
   const [isModalOpen, setIsModalOpen] = useState(false)
@@ -60,7 +61,7 @@ export function VendedoresModule() {
       setIsModalOpen(false)
     } catch (err) {
       console.error("Error al guardar vendedor:", err)
-      alert("Error al guardar el vendedor. Por favor, intenta de nuevo.")
+      toast.error("Error al guardar el vendedor. Por favor, intenta de nuevo.")
     }
   }
 
@@ -78,7 +79,7 @@ export function VendedoresModule() {
       setVendedorToDelete(null)
     } catch (err) {
       console.error("Error al eliminar vendedor:", err)
-      alert("Error al eliminar el vendedor. Por favor, intenta de nuevo.")
+      toast.error("Error al eliminar el vendedor. Por favor, intenta de nuevo.")
     }
   }
 

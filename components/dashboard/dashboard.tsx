@@ -10,8 +10,11 @@ import { VendedoresModule } from "@/components/modules/vendedores/vendedores-mod
 import { ClientesModule } from "@/components/modules/clientes/clientes-module"
 import { LeadsModule } from "@/components/modules/leads/leads-module"
 import { PaquetesModule } from "@/components/modules/paquetes/paquetes-module"
+import { PosadasModule } from "@/components/modules/posadas/posadas-module"
+import { HabitacionesModule } from "@/components/modules/habitaciones/habitaciones-module"
+import { ConfiguracionEmailModule } from "@/components/modules/configuracion/configuracion-email-module"
 
-type ModuleType = "dashboard" | "sucursales" | "vendedores" | "clientes" | "leads" | "paquetes"
+type ModuleType = "dashboard" | "sucursales" | "vendedores" | "clientes" | "leads" | "paquetes" | "posadas" | "habitaciones" | "configuracion"
 
 export function Dashboard() {
   const [sidebarOpen, setSidebarOpen] = useState(true)
@@ -36,6 +39,12 @@ export function Dashboard() {
         return <PaquetesModule />
       case "leads":
         return <LeadsModule />
+      case "posadas":
+        return <PosadasModule />
+      case "habitaciones":
+        return <HabitacionesModule />
+      case "configuracion":
+        return <ConfiguracionEmailModule />
       default:
         return <DashboardHome />
     }

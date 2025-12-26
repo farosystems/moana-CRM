@@ -134,6 +134,12 @@ function Sidebar({ isOpen, activeModule, onModuleChange }) {
             label: "Leads",
             icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$trending$2d$up$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__TrendingUp$3e$__["TrendingUp"],
             color: "text-orange-500"
+        },
+        {
+            id: "configuracion",
+            label: "Configuración",
+            icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$settings$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Settings$3e$__["Settings"],
+            color: "text-gray-500"
         }
     ];
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("aside", {
@@ -150,7 +156,7 @@ function Sidebar({ isOpen, activeModule, onModuleChange }) {
                     priority: true
                 }, void 0, false, {
                     fileName: "[project]/components/layout/sidebar.tsx",
-                    lineNumber: 64,
+                    lineNumber: 70,
                     columnNumber: 11
                 }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                     src: "/logo moana.png",
@@ -161,12 +167,12 @@ function Sidebar({ isOpen, activeModule, onModuleChange }) {
                     priority: true
                 }, void 0, false, {
                     fileName: "[project]/components/layout/sidebar.tsx",
-                    lineNumber: 73,
+                    lineNumber: 79,
                     columnNumber: 11
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/layout/sidebar.tsx",
-                lineNumber: 62,
+                lineNumber: 68,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("nav", {
@@ -181,7 +187,7 @@ function Sidebar({ isOpen, activeModule, onModuleChange }) {
                                 className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$utils$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cn"])("w-5 h-5 flex-shrink-0", module.color)
                             }, void 0, false, {
                                 fileName: "[project]/components/layout/sidebar.tsx",
-                                lineNumber: 99,
+                                lineNumber: 105,
                                 columnNumber: 15
                             }, this),
                             isOpen && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -189,19 +195,19 @@ function Sidebar({ isOpen, activeModule, onModuleChange }) {
                                 children: module.label
                             }, void 0, false, {
                                 fileName: "[project]/components/layout/sidebar.tsx",
-                                lineNumber: 100,
+                                lineNumber: 106,
                                 columnNumber: 26
                             }, this)
                         ]
                     }, module.id, true, {
                         fileName: "[project]/components/layout/sidebar.tsx",
-                        lineNumber: 89,
+                        lineNumber: 95,
                         columnNumber: 13
                     }, this);
                 })
             }, void 0, false, {
                 fileName: "[project]/components/layout/sidebar.tsx",
-                lineNumber: 85,
+                lineNumber: 91,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -216,7 +222,7 @@ function Sidebar({ isOpen, activeModule, onModuleChange }) {
                                 className: "w-4 h-4"
                             }, void 0, false, {
                                 fileName: "[project]/components/layout/sidebar.tsx",
-                                lineNumber: 113,
+                                lineNumber: 119,
                                 columnNumber: 11
                             }, this),
                             isOpen && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -224,13 +230,13 @@ function Sidebar({ isOpen, activeModule, onModuleChange }) {
                                 children: "Configuración"
                             }, void 0, false, {
                                 fileName: "[project]/components/layout/sidebar.tsx",
-                                lineNumber: 114,
+                                lineNumber: 120,
                                 columnNumber: 22
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/layout/sidebar.tsx",
-                        lineNumber: 108,
+                        lineNumber: 114,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
@@ -242,7 +248,7 @@ function Sidebar({ isOpen, activeModule, onModuleChange }) {
                                 className: "w-4 h-4"
                             }, void 0, false, {
                                 fileName: "[project]/components/layout/sidebar.tsx",
-                                lineNumber: 121,
+                                lineNumber: 127,
                                 columnNumber: 11
                             }, this),
                             isOpen && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -250,25 +256,25 @@ function Sidebar({ isOpen, activeModule, onModuleChange }) {
                                 children: "Salir"
                             }, void 0, false, {
                                 fileName: "[project]/components/layout/sidebar.tsx",
-                                lineNumber: 122,
+                                lineNumber: 128,
                                 columnNumber: 22
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/layout/sidebar.tsx",
-                        lineNumber: 116,
+                        lineNumber: 122,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/layout/sidebar.tsx",
-                lineNumber: 107,
+                lineNumber: 113,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/layout/sidebar.tsx",
-        lineNumber: 55,
+        lineNumber: 61,
         columnNumber: 5
     }, this);
 }
@@ -1992,11 +1998,23 @@ const paquetesQueries = {
 const clientesQueries = {
     // Obtener todos los clientes
     getAll: async ()=>{
-        const { data, error } = await __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$supabase$2f$client$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["supabase"].from('clientes').select('*').eq('activo', true).order('created_at', {
+        const { data, error } = await __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$supabase$2f$client$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["supabase"].from('clientes').select(`
+        *,
+        vendedor:vendedor_id (
+          id,
+          nombre,
+          apellido
+        )
+      `).eq('activo', true).order('created_at', {
             ascending: false
         });
         if (error) throw error;
-        return data;
+        // Mapear los datos para incluir el nombre del vendedor
+        const clientesConDatos = data?.map((cliente)=>({
+                ...cliente,
+                vendedorAsignado: cliente.vendedor ? `${cliente.vendedor.nombre} ${cliente.vendedor.apellido}` : '-'
+            })) || [];
+        return clientesConDatos;
     },
     // Obtener cliente por ID con historial
     getById: async (id)=>{
@@ -2051,6 +2069,11 @@ const leadsQueries = {
           nombre,
           apellido
         ),
+        vendedor_colaborador:vendedor_colaborador_id (
+          id,
+          nombre,
+          apellido
+        ),
         paquete:paquete_sugerido_id (
           id,
           nombre
@@ -2063,6 +2086,7 @@ const leadsQueries = {
         const leadsConDatos = data?.map((lead)=>({
                 ...lead,
                 vendedorAsignado: lead.vendedor ? `${lead.vendedor.nombre} ${lead.vendedor.apellido}` : '-',
+                vendedorColaborador: lead.vendedor_colaborador ? `${lead.vendedor_colaborador.nombre} ${lead.vendedor_colaborador.apellido}` : '-',
                 tipoConsulta: lead.tipo_consulta,
                 paqueteSugerido: lead.paquete?.nombre || '-',
                 notasInternas: lead.notas_internas,
@@ -3567,7 +3591,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2
 ;
 ;
 ;
-function ClientesTable({ clientes, onDelete, onViewDetail }) {
+function ClientesTable({ clientes, onEdit, onDelete, onViewDetail }) {
     const handleWhatsApp = (cliente)=>{
         const message = encodeURIComponent(`Hola ${cliente.nombre}, te contactamos respecto a tus servicios turísticos.`);
         window.open(`https://wa.me/${cliente.whatsapp?.replace(/\D/g, "")}?text=${message}`);
@@ -3592,7 +3616,7 @@ function ClientesTable({ clientes, onDelete, onViewDetail }) {
                                     children: "Nombre"
                                 }, void 0, false, {
                                     fileName: "[project]/components/modules/clientes/clientes-table.tsx",
-                                    lineNumber: 43,
+                                    lineNumber: 44,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
@@ -3600,7 +3624,7 @@ function ClientesTable({ clientes, onDelete, onViewDetail }) {
                                     children: "Email"
                                 }, void 0, false, {
                                     fileName: "[project]/components/modules/clientes/clientes-table.tsx",
-                                    lineNumber: 44,
+                                    lineNumber: 45,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
@@ -3608,7 +3632,7 @@ function ClientesTable({ clientes, onDelete, onViewDetail }) {
                                     children: "Ciudad"
                                 }, void 0, false, {
                                     fileName: "[project]/components/modules/clientes/clientes-table.tsx",
-                                    lineNumber: 45,
+                                    lineNumber: 46,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
@@ -3616,15 +3640,15 @@ function ClientesTable({ clientes, onDelete, onViewDetail }) {
                                     children: "País"
                                 }, void 0, false, {
                                     fileName: "[project]/components/modules/clientes/clientes-table.tsx",
-                                    lineNumber: 46,
+                                    lineNumber: 47,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
-                                    className: "text-center py-3 px-4 font-semibold text-foreground",
-                                    children: "Leads"
+                                    className: "text-left py-3 px-4 font-semibold text-foreground hidden xl:table-cell",
+                                    children: "Vendedor"
                                 }, void 0, false, {
                                     fileName: "[project]/components/modules/clientes/clientes-table.tsx",
-                                    lineNumber: 47,
+                                    lineNumber: 48,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
@@ -3632,18 +3656,18 @@ function ClientesTable({ clientes, onDelete, onViewDetail }) {
                                     children: "Acciones"
                                 }, void 0, false, {
                                     fileName: "[project]/components/modules/clientes/clientes-table.tsx",
-                                    lineNumber: 48,
+                                    lineNumber: 49,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/modules/clientes/clientes-table.tsx",
-                            lineNumber: 42,
+                            lineNumber: 43,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/components/modules/clientes/clientes-table.tsx",
-                        lineNumber: 41,
+                        lineNumber: 42,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("tbody", {
@@ -3655,7 +3679,7 @@ function ClientesTable({ clientes, onDelete, onViewDetail }) {
                                         children: cliente.nombre
                                     }, void 0, false, {
                                         fileName: "[project]/components/modules/clientes/clientes-table.tsx",
-                                        lineNumber: 54,
+                                        lineNumber: 55,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -3663,7 +3687,7 @@ function ClientesTable({ clientes, onDelete, onViewDetail }) {
                                         children: cliente.email
                                     }, void 0, false, {
                                         fileName: "[project]/components/modules/clientes/clientes-table.tsx",
-                                        lineNumber: 55,
+                                        lineNumber: 56,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -3671,7 +3695,7 @@ function ClientesTable({ clientes, onDelete, onViewDetail }) {
                                         children: cliente.ciudad
                                     }, void 0, false, {
                                         fileName: "[project]/components/modules/clientes/clientes-table.tsx",
-                                        lineNumber: 56,
+                                        lineNumber: 57,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -3679,15 +3703,15 @@ function ClientesTable({ clientes, onDelete, onViewDetail }) {
                                         children: cliente.pais
                                     }, void 0, false, {
                                         fileName: "[project]/components/modules/clientes/clientes-table.tsx",
-                                        lineNumber: 57,
+                                        lineNumber: 58,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
-                                        className: "py-3 px-4 text-center font-semibold text-purple-600 dark:text-purple-400",
-                                        children: cliente.leads
+                                        className: "py-3 px-4 text-muted-foreground hidden xl:table-cell text-xs",
+                                        children: cliente.vendedorAsignado || '-'
                                     }, void 0, false, {
                                         fileName: "[project]/components/modules/clientes/clientes-table.tsx",
-                                        lineNumber: 58,
+                                        lineNumber: 59,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -3705,12 +3729,12 @@ function ClientesTable({ clientes, onDelete, onViewDetail }) {
                                                         className: "w-4 h-4"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/modules/clientes/clientes-table.tsx",
-                                                        lineNumber: 70,
+                                                        lineNumber: 69,
                                                         columnNumber: 21
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/modules/clientes/clientes-table.tsx",
-                                                    lineNumber: 63,
+                                                    lineNumber: 62,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
@@ -3723,12 +3747,12 @@ function ClientesTable({ clientes, onDelete, onViewDetail }) {
                                                         className: "w-4 h-4"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/modules/clientes/clientes-table.tsx",
-                                                        lineNumber: 79,
+                                                        lineNumber: 78,
                                                         columnNumber: 21
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/modules/clientes/clientes-table.tsx",
-                                                    lineNumber: 72,
+                                                    lineNumber: 71,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
@@ -3741,17 +3765,18 @@ function ClientesTable({ clientes, onDelete, onViewDetail }) {
                                                         className: "w-4 h-4"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/modules/clientes/clientes-table.tsx",
-                                                        lineNumber: 88,
+                                                        lineNumber: 87,
                                                         columnNumber: 21
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/modules/clientes/clientes-table.tsx",
-                                                    lineNumber: 81,
+                                                    lineNumber: 80,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
                                                     size: "sm",
                                                     variant: "ghost",
+                                                    onClick: ()=>onEdit?.(cliente),
                                                     title: "Editar",
                                                     className: "h-8 w-8 p-0 text-blue-600 hover:bg-blue-100 dark:hover:bg-blue-900/20",
                                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$pen$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Edit2$3e$__["Edit2"], {
@@ -3763,7 +3788,7 @@ function ClientesTable({ clientes, onDelete, onViewDetail }) {
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/modules/clientes/clientes-table.tsx",
-                                                    lineNumber: 90,
+                                                    lineNumber: 89,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
@@ -3787,29 +3812,29 @@ function ClientesTable({ clientes, onDelete, onViewDetail }) {
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/modules/clientes/clientes-table.tsx",
-                                            lineNumber: 62,
+                                            lineNumber: 61,
                                             columnNumber: 17
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/components/modules/clientes/clientes-table.tsx",
-                                        lineNumber: 61,
+                                        lineNumber: 60,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, cliente.id, true, {
                                 fileName: "[project]/components/modules/clientes/clientes-table.tsx",
-                                lineNumber: 53,
+                                lineNumber: 54,
                                 columnNumber: 13
                             }, this))
                     }, void 0, false, {
                         fileName: "[project]/components/modules/clientes/clientes-table.tsx",
-                        lineNumber: 51,
+                        lineNumber: 52,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/modules/clientes/clientes-table.tsx",
-                lineNumber: 40,
+                lineNumber: 41,
                 columnNumber: 7
             }, this),
             clientes.length === 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3830,7 +3855,7 @@ function ClientesTable({ clientes, onDelete, onViewDetail }) {
         ]
     }, void 0, true, {
         fileName: "[project]/components/modules/clientes/clientes-table.tsx",
-        lineNumber: 39,
+        lineNumber: 40,
         columnNumber: 5
     }, this);
 }
@@ -3851,7 +3876,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$re
 ;
 ;
 ;
-function ClienteModal({ isOpen, onClose, onSubmit }) {
+function ClienteModal({ isOpen, onClose, onSubmit, cliente, vendedores = [] }) {
     const [activeTab, setActiveTab] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])("basico");
     const [formData, setFormData] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])({
         nombre: "",
@@ -3861,6 +3886,7 @@ function ClienteModal({ isOpen, onClose, onSubmit }) {
         telefono: "",
         whatsapp: "",
         tipoCliente: "empresa",
+        vendedorId: "",
         // Documentación
         documentoId: "",
         tipoDocumento: "pasaporte",
@@ -3872,9 +3898,57 @@ function ClienteModal({ isOpen, onClose, onSubmit }) {
         frecuenciaViajes: "ocasional",
         notas: ""
     });
+    // Cargar datos del cliente al editar
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(()=>{
+        if (cliente && isOpen) {
+            setFormData({
+                nombre: cliente.nombre || "",
+                email: cliente.email || "",
+                ciudad: cliente.ciudad || "",
+                pais: cliente.pais || "",
+                telefono: cliente.telefono || "",
+                whatsapp: cliente.whatsapp || "",
+                tipoCliente: cliente.tipo_cliente || "empresa",
+                vendedorId: cliente.vendedor_id || "",
+                documentoId: cliente.documento_id || "",
+                tipoDocumento: cliente.tipo_documento || "pasaporte",
+                paisDocumento: "",
+                destinosPreferidos: cliente.destinos_preferidos || "",
+                tipoViajes: cliente.tipo_viajes || [],
+                presupuestoPromedio: cliente.presupuesto_promedio || "",
+                frecuenciaViajes: cliente.frecuencia_viajes || "ocasional",
+                notas: ""
+            });
+        } else if (!isOpen) {
+            // Reset form cuando se cierra el modal
+            resetForm();
+        }
+    }, [
+        cliente,
+        isOpen
+    ]);
     const handleSubmit = (e)=>{
         e.preventDefault();
-        onSubmit(formData);
+        // Mapear campos de camelCase a snake_case para la base de datos
+        const dataToSubmit = {
+            nombre: formData.nombre,
+            email: formData.email,
+            telefono: formData.telefono,
+            tipo_cliente: formData.tipoCliente
+        };
+        // Campos opcionales
+        if (formData.ciudad) dataToSubmit.ciudad = formData.ciudad;
+        if (formData.pais) dataToSubmit.pais = formData.pais;
+        if (formData.whatsapp) dataToSubmit.whatsapp = formData.whatsapp;
+        if (formData.vendedorId) dataToSubmit.vendedor_id = formData.vendedorId;
+        if (formData.documentoId) dataToSubmit.documento_id = formData.documentoId;
+        if (formData.tipoDocumento) dataToSubmit.tipo_documento = formData.tipoDocumento;
+        if (formData.destinosPreferidos) dataToSubmit.destinos_preferidos = formData.destinosPreferidos;
+        if (formData.tipoViajes.length > 0) dataToSubmit.tipo_viajes = formData.tipoViajes;
+        if (formData.presupuestoPromedio) dataToSubmit.presupuesto_promedio = formData.presupuestoPromedio;
+        if (formData.frecuenciaViajes) dataToSubmit.frecuencia_viajes = formData.frecuenciaViajes;
+        // Nota: el campo 'notas' no existe en la tabla clientes
+        onSubmit(dataToSubmit);
         resetForm();
     };
     const resetForm = ()=>{
@@ -3886,6 +3960,7 @@ function ClienteModal({ isOpen, onClose, onSubmit }) {
             telefono: "",
             whatsapp: "",
             tipoCliente: "empresa",
+            vendedorId: "",
             documentoId: "",
             tipoDocumento: "pasaporte",
             paisDocumento: "",
@@ -3915,7 +3990,7 @@ function ClienteModal({ isOpen, onClose, onSubmit }) {
                 onClick: onClose
             }, void 0, false, {
                 fileName: "[project]/components/modules/clientes/cliente-modal.tsx",
-                lineNumber: 76,
+                lineNumber: 129,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3926,10 +4001,10 @@ function ClienteModal({ isOpen, onClose, onSubmit }) {
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                                 className: "text-xl font-bold text-foreground",
-                                children: "Nuevo Cliente"
+                                children: cliente ? "Editar Cliente" : "Nuevo Cliente"
                             }, void 0, false, {
                                 fileName: "[project]/components/modules/clientes/cliente-modal.tsx",
-                                lineNumber: 80,
+                                lineNumber: 133,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
@@ -3941,18 +4016,18 @@ function ClienteModal({ isOpen, onClose, onSubmit }) {
                                     className: "w-5 h-5"
                                 }, void 0, false, {
                                     fileName: "[project]/components/modules/clientes/cliente-modal.tsx",
-                                    lineNumber: 82,
+                                    lineNumber: 135,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/components/modules/clientes/cliente-modal.tsx",
-                                lineNumber: 81,
+                                lineNumber: 134,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/modules/clientes/cliente-modal.tsx",
-                        lineNumber: 79,
+                        lineNumber: 132,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3964,7 +4039,7 @@ function ClienteModal({ isOpen, onClose, onSubmit }) {
                                 children: "Datos Básicos"
                             }, void 0, false, {
                                 fileName: "[project]/components/modules/clientes/cliente-modal.tsx",
-                                lineNumber: 88,
+                                lineNumber: 141,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -3973,7 +4048,7 @@ function ClienteModal({ isOpen, onClose, onSubmit }) {
                                 children: "Documentación"
                             }, void 0, false, {
                                 fileName: "[project]/components/modules/clientes/cliente-modal.tsx",
-                                lineNumber: 98,
+                                lineNumber: 151,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -3982,13 +4057,13 @@ function ClienteModal({ isOpen, onClose, onSubmit }) {
                                 children: "Preferencias"
                             }, void 0, false, {
                                 fileName: "[project]/components/modules/clientes/cliente-modal.tsx",
-                                lineNumber: 108,
+                                lineNumber: 161,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/modules/clientes/cliente-modal.tsx",
-                        lineNumber: 87,
+                        lineNumber: 140,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("form", {
@@ -4005,7 +4080,7 @@ function ClienteModal({ isOpen, onClose, onSubmit }) {
                                                 children: "Tipo de Cliente"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/modules/clientes/cliente-modal.tsx",
-                                                lineNumber: 125,
+                                                lineNumber: 178,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("select", {
@@ -4021,7 +4096,7 @@ function ClienteModal({ isOpen, onClose, onSubmit }) {
                                                         children: "Empresa"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/modules/clientes/cliente-modal.tsx",
-                                                        lineNumber: 131,
+                                                        lineNumber: 184,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
@@ -4029,19 +4104,69 @@ function ClienteModal({ isOpen, onClose, onSubmit }) {
                                                         children: "Persona"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/modules/clientes/cliente-modal.tsx",
-                                                        lineNumber: 132,
+                                                        lineNumber: 185,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/components/modules/clientes/cliente-modal.tsx",
-                                                lineNumber: 126,
+                                                lineNumber: 179,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/modules/clientes/cliente-modal.tsx",
-                                        lineNumber: 124,
+                                        lineNumber: 177,
+                                        columnNumber: 15
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
+                                                className: "block text-sm font-medium text-foreground mb-2",
+                                                children: "Vendedor Asignado"
+                                            }, void 0, false, {
+                                                fileName: "[project]/components/modules/clientes/cliente-modal.tsx",
+                                                lineNumber: 190,
+                                                columnNumber: 17
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("select", {
+                                                className: "w-full px-3 py-2 border border-border rounded-lg bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary",
+                                                value: formData.vendedorId,
+                                                onChange: (e)=>setFormData({
+                                                        ...formData,
+                                                        vendedorId: e.target.value
+                                                    }),
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
+                                                        value: "",
+                                                        children: "Seleccionar vendedor"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/components/modules/clientes/cliente-modal.tsx",
+                                                        lineNumber: 196,
+                                                        columnNumber: 19
+                                                    }, this),
+                                                    vendedores.map((vendedor)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
+                                                            value: vendedor.id,
+                                                            children: [
+                                                                vendedor.nombre,
+                                                                " ",
+                                                                vendedor.apellido
+                                                            ]
+                                                        }, vendedor.id, true, {
+                                                            fileName: "[project]/components/modules/clientes/cliente-modal.tsx",
+                                                            lineNumber: 198,
+                                                            columnNumber: 21
+                                                        }, this))
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/components/modules/clientes/cliente-modal.tsx",
+                                                lineNumber: 191,
+                                                columnNumber: 17
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/components/modules/clientes/cliente-modal.tsx",
+                                        lineNumber: 189,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4051,7 +4176,7 @@ function ClienteModal({ isOpen, onClose, onSubmit }) {
                                                 children: "Nombre Completo"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/modules/clientes/cliente-modal.tsx",
-                                                lineNumber: 137,
+                                                lineNumber: 206,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -4066,13 +4191,13 @@ function ClienteModal({ isOpen, onClose, onSubmit }) {
                                                     })
                                             }, void 0, false, {
                                                 fileName: "[project]/components/modules/clientes/cliente-modal.tsx",
-                                                lineNumber: 138,
+                                                lineNumber: 207,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/modules/clientes/cliente-modal.tsx",
-                                        lineNumber: 136,
+                                        lineNumber: 205,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4085,7 +4210,7 @@ function ClienteModal({ isOpen, onClose, onSubmit }) {
                                                         children: "Email"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/modules/clientes/cliente-modal.tsx",
-                                                        lineNumber: 150,
+                                                        lineNumber: 219,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -4100,13 +4225,13 @@ function ClienteModal({ isOpen, onClose, onSubmit }) {
                                                             })
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/modules/clientes/cliente-modal.tsx",
-                                                        lineNumber: 151,
+                                                        lineNumber: 220,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/components/modules/clientes/cliente-modal.tsx",
-                                                lineNumber: 149,
+                                                lineNumber: 218,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4116,7 +4241,7 @@ function ClienteModal({ isOpen, onClose, onSubmit }) {
                                                         children: "Teléfono"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/modules/clientes/cliente-modal.tsx",
-                                                        lineNumber: 161,
+                                                        lineNumber: 230,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -4131,19 +4256,19 @@ function ClienteModal({ isOpen, onClose, onSubmit }) {
                                                             })
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/modules/clientes/cliente-modal.tsx",
-                                                        lineNumber: 162,
+                                                        lineNumber: 231,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/components/modules/clientes/cliente-modal.tsx",
-                                                lineNumber: 160,
+                                                lineNumber: 229,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/modules/clientes/cliente-modal.tsx",
-                                        lineNumber: 148,
+                                        lineNumber: 217,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4153,7 +4278,7 @@ function ClienteModal({ isOpen, onClose, onSubmit }) {
                                                 children: "WhatsApp"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/modules/clientes/cliente-modal.tsx",
-                                                lineNumber: 174,
+                                                lineNumber: 243,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -4167,13 +4292,13 @@ function ClienteModal({ isOpen, onClose, onSubmit }) {
                                                     })
                                             }, void 0, false, {
                                                 fileName: "[project]/components/modules/clientes/cliente-modal.tsx",
-                                                lineNumber: 175,
+                                                lineNumber: 244,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/modules/clientes/cliente-modal.tsx",
-                                        lineNumber: 173,
+                                        lineNumber: 242,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4186,7 +4311,7 @@ function ClienteModal({ isOpen, onClose, onSubmit }) {
                                                         children: "Ciudad"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/modules/clientes/cliente-modal.tsx",
-                                                        lineNumber: 186,
+                                                        lineNumber: 255,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -4200,13 +4325,13 @@ function ClienteModal({ isOpen, onClose, onSubmit }) {
                                                             })
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/modules/clientes/cliente-modal.tsx",
-                                                        lineNumber: 187,
+                                                        lineNumber: 256,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/components/modules/clientes/cliente-modal.tsx",
-                                                lineNumber: 185,
+                                                lineNumber: 254,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4216,7 +4341,7 @@ function ClienteModal({ isOpen, onClose, onSubmit }) {
                                                         children: "País"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/modules/clientes/cliente-modal.tsx",
-                                                        lineNumber: 196,
+                                                        lineNumber: 265,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -4230,25 +4355,25 @@ function ClienteModal({ isOpen, onClose, onSubmit }) {
                                                             })
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/modules/clientes/cliente-modal.tsx",
-                                                        lineNumber: 197,
+                                                        lineNumber: 266,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/components/modules/clientes/cliente-modal.tsx",
-                                                lineNumber: 195,
+                                                lineNumber: 264,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/modules/clientes/cliente-modal.tsx",
-                                        lineNumber: 184,
+                                        lineNumber: 253,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/modules/clientes/cliente-modal.tsx",
-                                lineNumber: 123,
+                                lineNumber: 176,
                                 columnNumber: 13
                             }, this),
                             activeTab === "documentos" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4261,7 +4386,7 @@ function ClienteModal({ isOpen, onClose, onSubmit }) {
                                                 children: "Tipo de Documento"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/modules/clientes/cliente-modal.tsx",
-                                                lineNumber: 213,
+                                                lineNumber: 282,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("select", {
@@ -4277,7 +4402,7 @@ function ClienteModal({ isOpen, onClose, onSubmit }) {
                                                         children: "Pasaporte"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/modules/clientes/cliente-modal.tsx",
-                                                        lineNumber: 219,
+                                                        lineNumber: 288,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
@@ -4285,7 +4410,7 @@ function ClienteModal({ isOpen, onClose, onSubmit }) {
                                                         children: "Cédula"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/modules/clientes/cliente-modal.tsx",
-                                                        lineNumber: 220,
+                                                        lineNumber: 289,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
@@ -4293,7 +4418,7 @@ function ClienteModal({ isOpen, onClose, onSubmit }) {
                                                         children: "NIF"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/modules/clientes/cliente-modal.tsx",
-                                                        lineNumber: 221,
+                                                        lineNumber: 290,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
@@ -4301,7 +4426,7 @@ function ClienteModal({ isOpen, onClose, onSubmit }) {
                                                         children: "RUT"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/modules/clientes/cliente-modal.tsx",
-                                                        lineNumber: 222,
+                                                        lineNumber: 291,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
@@ -4309,19 +4434,19 @@ function ClienteModal({ isOpen, onClose, onSubmit }) {
                                                         children: "Otro"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/modules/clientes/cliente-modal.tsx",
-                                                        lineNumber: 223,
+                                                        lineNumber: 292,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/components/modules/clientes/cliente-modal.tsx",
-                                                lineNumber: 214,
+                                                lineNumber: 283,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/modules/clientes/cliente-modal.tsx",
-                                        lineNumber: 212,
+                                        lineNumber: 281,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4331,7 +4456,7 @@ function ClienteModal({ isOpen, onClose, onSubmit }) {
                                                 children: "Número de Documento"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/modules/clientes/cliente-modal.tsx",
-                                                lineNumber: 228,
+                                                lineNumber: 297,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -4345,13 +4470,13 @@ function ClienteModal({ isOpen, onClose, onSubmit }) {
                                                     })
                                             }, void 0, false, {
                                                 fileName: "[project]/components/modules/clientes/cliente-modal.tsx",
-                                                lineNumber: 229,
+                                                lineNumber: 298,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/modules/clientes/cliente-modal.tsx",
-                                        lineNumber: 227,
+                                        lineNumber: 296,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4361,7 +4486,7 @@ function ClienteModal({ isOpen, onClose, onSubmit }) {
                                                 children: "País de Emisión"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/modules/clientes/cliente-modal.tsx",
-                                                lineNumber: 239,
+                                                lineNumber: 308,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -4375,13 +4500,13 @@ function ClienteModal({ isOpen, onClose, onSubmit }) {
                                                     })
                                             }, void 0, false, {
                                                 fileName: "[project]/components/modules/clientes/cliente-modal.tsx",
-                                                lineNumber: 240,
+                                                lineNumber: 309,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/modules/clientes/cliente-modal.tsx",
-                                        lineNumber: 238,
+                                        lineNumber: 307,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4391,18 +4516,18 @@ function ClienteModal({ isOpen, onClose, onSubmit }) {
                                             children: "Los datos de documentación se pueden actualizar directamente en el perfil del cliente."
                                         }, void 0, false, {
                                             fileName: "[project]/components/modules/clientes/cliente-modal.tsx",
-                                            lineNumber: 250,
+                                            lineNumber: 319,
                                             columnNumber: 17
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/components/modules/clientes/cliente-modal.tsx",
-                                        lineNumber: 249,
+                                        lineNumber: 318,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/modules/clientes/cliente-modal.tsx",
-                                lineNumber: 211,
+                                lineNumber: 280,
                                 columnNumber: 13
                             }, this),
                             activeTab === "preferencias" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4415,7 +4540,7 @@ function ClienteModal({ isOpen, onClose, onSubmit }) {
                                                 children: "Destinos Preferidos"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/modules/clientes/cliente-modal.tsx",
-                                                lineNumber: 261,
+                                                lineNumber: 330,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -4429,13 +4554,13 @@ function ClienteModal({ isOpen, onClose, onSubmit }) {
                                                     })
                                             }, void 0, false, {
                                                 fileName: "[project]/components/modules/clientes/cliente-modal.tsx",
-                                                lineNumber: 262,
+                                                lineNumber: 331,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/modules/clientes/cliente-modal.tsx",
-                                        lineNumber: 260,
+                                        lineNumber: 329,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4445,7 +4570,7 @@ function ClienteModal({ isOpen, onClose, onSubmit }) {
                                                 children: "Tipo de Viajes"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/modules/clientes/cliente-modal.tsx",
-                                                lineNumber: 272,
+                                                lineNumber: 341,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4467,7 +4592,7 @@ function ClienteModal({ isOpen, onClose, onSubmit }) {
                                                                 className: "w-4 h-4 rounded border-border"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/components/modules/clientes/cliente-modal.tsx",
-                                                                lineNumber: 276,
+                                                                lineNumber: 345,
                                                                 columnNumber: 23
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -4475,24 +4600,24 @@ function ClienteModal({ isOpen, onClose, onSubmit }) {
                                                                 children: tipo
                                                             }, void 0, false, {
                                                                 fileName: "[project]/components/modules/clientes/cliente-modal.tsx",
-                                                                lineNumber: 282,
+                                                                lineNumber: 351,
                                                                 columnNumber: 23
                                                             }, this)
                                                         ]
                                                     }, tipo, true, {
                                                         fileName: "[project]/components/modules/clientes/cliente-modal.tsx",
-                                                        lineNumber: 275,
+                                                        lineNumber: 344,
                                                         columnNumber: 21
                                                     }, this))
                                             }, void 0, false, {
                                                 fileName: "[project]/components/modules/clientes/cliente-modal.tsx",
-                                                lineNumber: 273,
+                                                lineNumber: 342,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/modules/clientes/cliente-modal.tsx",
-                                        lineNumber: 271,
+                                        lineNumber: 340,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4502,7 +4627,7 @@ function ClienteModal({ isOpen, onClose, onSubmit }) {
                                                 children: "Presupuesto Promedio"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/modules/clientes/cliente-modal.tsx",
-                                                lineNumber: 289,
+                                                lineNumber: 358,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("select", {
@@ -4518,7 +4643,7 @@ function ClienteModal({ isOpen, onClose, onSubmit }) {
                                                         children: "Seleccionar..."
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/modules/clientes/cliente-modal.tsx",
-                                                        lineNumber: 295,
+                                                        lineNumber: 364,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
@@ -4526,7 +4651,7 @@ function ClienteModal({ isOpen, onClose, onSubmit }) {
                                                         children: "Bajo (<$1000)"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/modules/clientes/cliente-modal.tsx",
-                                                        lineNumber: 296,
+                                                        lineNumber: 365,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
@@ -4534,7 +4659,7 @@ function ClienteModal({ isOpen, onClose, onSubmit }) {
                                                         children: "Medio ($1000 - $5000)"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/modules/clientes/cliente-modal.tsx",
-                                                        lineNumber: 297,
+                                                        lineNumber: 366,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
@@ -4542,7 +4667,7 @@ function ClienteModal({ isOpen, onClose, onSubmit }) {
                                                         children: "Alto ($5000 - $15000)"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/modules/clientes/cliente-modal.tsx",
-                                                        lineNumber: 298,
+                                                        lineNumber: 367,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
@@ -4550,19 +4675,19 @@ function ClienteModal({ isOpen, onClose, onSubmit }) {
                                                         children: "Premium (>$15000)"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/modules/clientes/cliente-modal.tsx",
-                                                        lineNumber: 299,
+                                                        lineNumber: 368,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/components/modules/clientes/cliente-modal.tsx",
-                                                lineNumber: 290,
+                                                lineNumber: 359,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/modules/clientes/cliente-modal.tsx",
-                                        lineNumber: 288,
+                                        lineNumber: 357,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4572,7 +4697,7 @@ function ClienteModal({ isOpen, onClose, onSubmit }) {
                                                 children: "Frecuencia de Viajes"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/modules/clientes/cliente-modal.tsx",
-                                                lineNumber: 304,
+                                                lineNumber: 373,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("select", {
@@ -4588,7 +4713,7 @@ function ClienteModal({ isOpen, onClose, onSubmit }) {
                                                         children: "Ocasional"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/modules/clientes/cliente-modal.tsx",
-                                                        lineNumber: 310,
+                                                        lineNumber: 379,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
@@ -4596,7 +4721,7 @@ function ClienteModal({ isOpen, onClose, onSubmit }) {
                                                         children: "Trimestral"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/modules/clientes/cliente-modal.tsx",
-                                                        lineNumber: 311,
+                                                        lineNumber: 380,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
@@ -4604,7 +4729,7 @@ function ClienteModal({ isOpen, onClose, onSubmit }) {
                                                         children: "Mensual"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/modules/clientes/cliente-modal.tsx",
-                                                        lineNumber: 312,
+                                                        lineNumber: 381,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
@@ -4612,19 +4737,19 @@ function ClienteModal({ isOpen, onClose, onSubmit }) {
                                                         children: "Semanal"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/modules/clientes/cliente-modal.tsx",
-                                                        lineNumber: 313,
+                                                        lineNumber: 382,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/components/modules/clientes/cliente-modal.tsx",
-                                                lineNumber: 305,
+                                                lineNumber: 374,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/modules/clientes/cliente-modal.tsx",
-                                        lineNumber: 303,
+                                        lineNumber: 372,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4634,7 +4759,7 @@ function ClienteModal({ isOpen, onClose, onSubmit }) {
                                                 children: "Notas"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/modules/clientes/cliente-modal.tsx",
-                                                lineNumber: 318,
+                                                lineNumber: 387,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("textarea", {
@@ -4648,19 +4773,19 @@ function ClienteModal({ isOpen, onClose, onSubmit }) {
                                                 rows: 3
                                             }, void 0, false, {
                                                 fileName: "[project]/components/modules/clientes/cliente-modal.tsx",
-                                                lineNumber: 319,
+                                                lineNumber: 388,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/modules/clientes/cliente-modal.tsx",
-                                        lineNumber: 317,
+                                        lineNumber: 386,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/modules/clientes/cliente-modal.tsx",
-                                lineNumber: 259,
+                                lineNumber: 328,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4674,7 +4799,7 @@ function ClienteModal({ isOpen, onClose, onSubmit }) {
                                         children: "Cancelar"
                                     }, void 0, false, {
                                         fileName: "[project]/components/modules/clientes/cliente-modal.tsx",
-                                        lineNumber: 331,
+                                        lineNumber: 400,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
@@ -4683,31 +4808,31 @@ function ClienteModal({ isOpen, onClose, onSubmit }) {
                                         children: "Guardar Cliente"
                                     }, void 0, false, {
                                         fileName: "[project]/components/modules/clientes/cliente-modal.tsx",
-                                        lineNumber: 339,
+                                        lineNumber: 408,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/modules/clientes/cliente-modal.tsx",
-                                lineNumber: 330,
+                                lineNumber: 399,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/modules/clientes/cliente-modal.tsx",
-                        lineNumber: 120,
+                        lineNumber: 173,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/modules/clientes/cliente-modal.tsx",
-                lineNumber: 78,
+                lineNumber: 131,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/modules/clientes/cliente-modal.tsx",
-        lineNumber: 75,
+        lineNumber: 128,
         columnNumber: 5
     }, this);
 }
@@ -5802,14 +5927,25 @@ function ClientesModule() {
     const [isDetailOpen, setIsDetailOpen] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(false);
     const [isDeleteDialogOpen, setIsDeleteDialogOpen] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(false);
     const [clienteToDelete, setClienteToDelete] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(null);
+    const [editingCliente, setEditingCliente] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(null);
     const [selectedClienteId, setSelectedClienteId] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(null);
     const [searchTerm, setSearchTerm] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])("");
     const [clientes, setClientes] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])([]);
+    const [vendedores, setVendedores] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])([]);
     const [loading, setLoading] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(true);
     const [error, setError] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(null);
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(()=>{
         fetchClientes();
+        fetchVendedores();
     }, []);
+    const fetchVendedores = async ()=>{
+        try {
+            const data = await __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$supabase$2f$queries$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["vendedoresQueries"].getAll();
+            setVendedores(data);
+        } catch (err) {
+            console.error("Error al cargar vendedores:", err);
+        }
+    };
     const fetchClientes = async ()=>{
         try {
             setLoading(true);
@@ -5825,16 +5961,32 @@ function ClientesModule() {
     };
     const handleAddCliente = async (data)=>{
         try {
-            const newCliente = await __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$supabase$2f$queries$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["clientesQueries"].create(data);
-            setClientes([
-                ...clientes,
-                newCliente
-            ]);
+            if (editingCliente) {
+                // Actualizar cliente existente
+                await __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$supabase$2f$queries$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["clientesQueries"].update(editingCliente.id, data);
+                await fetchClientes();
+                setEditingCliente(null);
+            } else {
+                // Crear nuevo cliente
+                const newCliente = await __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$supabase$2f$queries$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["clientesQueries"].create(data);
+                setClientes([
+                    ...clientes,
+                    newCliente
+                ]);
+            }
             setIsModalOpen(false);
         } catch (err) {
-            console.error("Error al crear cliente:", err);
-            alert("Error al crear el cliente. Por favor, intenta de nuevo.");
+            console.error("Error al guardar cliente:", err);
+            alert("Error al guardar el cliente. Por favor, intenta de nuevo.");
         }
+    };
+    const handleEditCliente = (cliente)=>{
+        setEditingCliente(cliente);
+        setIsModalOpen(true);
+    };
+    const handleCloseModal = ()=>{
+        setIsModalOpen(false);
+        setEditingCliente(null);
     };
     const handleImportClientes = async (importedClientes)=>{
         try {
@@ -5881,7 +6033,7 @@ function ClientesModule() {
                             children: "Gestión de Clientes"
                         }, void 0, false, {
                             fileName: "[project]/components/modules/clientes/clientes-module.tsx",
-                            lineNumber: 97,
+                            lineNumber: 127,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -5889,13 +6041,13 @@ function ClientesModule() {
                             children: "Administra tu base de clientes con conversión de leads e historial completo"
                         }, void 0, false, {
                             fileName: "[project]/components/modules/clientes/clientes-module.tsx",
-                            lineNumber: 98,
+                            lineNumber: 128,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/modules/clientes/clientes-module.tsx",
-                    lineNumber: 96,
+                    lineNumber: 126,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Card"], {
@@ -5907,23 +6059,23 @@ function ClientesModule() {
                             children: "Cargando clientes..."
                         }, void 0, false, {
                             fileName: "[project]/components/modules/clientes/clientes-module.tsx",
-                            lineNumber: 104,
+                            lineNumber: 134,
                             columnNumber: 13
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/components/modules/clientes/clientes-module.tsx",
-                        lineNumber: 103,
+                        lineNumber: 133,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/components/modules/clientes/clientes-module.tsx",
-                    lineNumber: 102,
+                    lineNumber: 132,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/components/modules/clientes/clientes-module.tsx",
-            lineNumber: 95,
+            lineNumber: 125,
             columnNumber: 7
         }, this);
     }
@@ -5938,7 +6090,7 @@ function ClientesModule() {
                             children: "Gestión de Clientes"
                         }, void 0, false, {
                             fileName: "[project]/components/modules/clientes/clientes-module.tsx",
-                            lineNumber: 115,
+                            lineNumber: 145,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -5946,13 +6098,13 @@ function ClientesModule() {
                             children: "Administra tu base de clientes con conversión de leads e historial completo"
                         }, void 0, false, {
                             fileName: "[project]/components/modules/clientes/clientes-module.tsx",
-                            lineNumber: 116,
+                            lineNumber: 146,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/modules/clientes/clientes-module.tsx",
-                    lineNumber: 114,
+                    lineNumber: 144,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Card"], {
@@ -5965,7 +6117,7 @@ function ClientesModule() {
                                 children: error
                             }, void 0, false, {
                                 fileName: "[project]/components/modules/clientes/clientes-module.tsx",
-                                lineNumber: 122,
+                                lineNumber: 152,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
@@ -5973,24 +6125,24 @@ function ClientesModule() {
                                 children: "Reintentar"
                             }, void 0, false, {
                                 fileName: "[project]/components/modules/clientes/clientes-module.tsx",
-                                lineNumber: 123,
+                                lineNumber: 153,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/modules/clientes/clientes-module.tsx",
-                        lineNumber: 121,
+                        lineNumber: 151,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/components/modules/clientes/clientes-module.tsx",
-                    lineNumber: 120,
+                    lineNumber: 150,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/components/modules/clientes/clientes-module.tsx",
-            lineNumber: 113,
+            lineNumber: 143,
             columnNumber: 7
         }, this);
     }
@@ -6004,7 +6156,7 @@ function ClientesModule() {
                         children: "Gestión de Clientes"
                     }, void 0, false, {
                         fileName: "[project]/components/modules/clientes/clientes-module.tsx",
-                        lineNumber: 133,
+                        lineNumber: 163,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -6012,13 +6164,13 @@ function ClientesModule() {
                         children: "Administra tu base de clientes con conversión de leads e historial completo"
                     }, void 0, false, {
                         fileName: "[project]/components/modules/clientes/clientes-module.tsx",
-                        lineNumber: 134,
+                        lineNumber: 164,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/modules/clientes/clientes-module.tsx",
-                lineNumber: 132,
+                lineNumber: 162,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Card"], {
@@ -6036,7 +6188,7 @@ function ClientesModule() {
                                             className: "absolute left-3 top-3 w-4 h-4 text-muted-foreground"
                                         }, void 0, false, {
                                             fileName: "[project]/components/modules/clientes/clientes-module.tsx",
-                                            lineNumber: 143,
+                                            lineNumber: 173,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -6047,13 +6199,13 @@ function ClientesModule() {
                                             onChange: (e)=>setSearchTerm(e.target.value)
                                         }, void 0, false, {
                                             fileName: "[project]/components/modules/clientes/clientes-module.tsx",
-                                            lineNumber: 144,
+                                            lineNumber: 174,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/modules/clientes/clientes-module.tsx",
-                                    lineNumber: 142,
+                                    lineNumber: 172,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -6067,14 +6219,14 @@ function ClientesModule() {
                                                     className: "w-4 h-4"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/modules/clientes/clientes-module.tsx",
-                                                    lineNumber: 157,
+                                                    lineNumber: 187,
                                                     columnNumber: 17
                                                 }, this),
                                                 "Cliente"
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/modules/clientes/clientes-module.tsx",
-                                            lineNumber: 153,
+                                            lineNumber: 183,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
@@ -6085,55 +6237,58 @@ function ClientesModule() {
                                                     className: "w-4 h-4"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/modules/clientes/clientes-module.tsx",
-                                                    lineNumber: 164,
+                                                    lineNumber: 194,
                                                     columnNumber: 17
                                                 }, this),
                                                 "Importar"
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/modules/clientes/clientes-module.tsx",
-                                            lineNumber: 160,
+                                            lineNumber: 190,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/modules/clientes/clientes-module.tsx",
-                                    lineNumber: 152,
+                                    lineNumber: 182,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/modules/clientes/clientes-module.tsx",
-                            lineNumber: 141,
+                            lineNumber: 171,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/components/modules/clientes/clientes-module.tsx",
-                        lineNumber: 140,
+                        lineNumber: 170,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$modules$2f$clientes$2f$clientes$2d$table$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["ClientesTable"], {
                         clientes: filteredClientes,
+                        onEdit: handleEditCliente,
                         onDelete: handleDeleteCliente,
                         onViewDetail: handleViewDetail
                     }, void 0, false, {
                         fileName: "[project]/components/modules/clientes/clientes-module.tsx",
-                        lineNumber: 171,
+                        lineNumber: 201,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/modules/clientes/clientes-module.tsx",
-                lineNumber: 139,
+                lineNumber: 169,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$modules$2f$clientes$2f$cliente$2d$modal$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["ClienteModal"], {
                 isOpen: isModalOpen,
-                onClose: ()=>setIsModalOpen(false),
-                onSubmit: handleAddCliente
+                onClose: handleCloseModal,
+                onSubmit: handleAddCliente,
+                cliente: editingCliente,
+                vendedores: vendedores
             }, void 0, false, {
                 fileName: "[project]/components/modules/clientes/clientes-module.tsx",
-                lineNumber: 174,
+                lineNumber: 204,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$modules$2f$clientes$2f$import$2d$clientes$2d$modal$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["ImportClientesModal"], {
@@ -6142,7 +6297,7 @@ function ClientesModule() {
                 onSubmit: handleImportClientes
             }, void 0, false, {
                 fileName: "[project]/components/modules/clientes/clientes-module.tsx",
-                lineNumber: 175,
+                lineNumber: 205,
                 columnNumber: 7
             }, this),
             selectedClienteId && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$modules$2f$clientes$2f$cliente$2d$detail$2d$modal$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["ClienteDetailModal"], {
@@ -6151,7 +6306,7 @@ function ClientesModule() {
                 cliente: clientes.find((c)=>c.id === selectedClienteId)
             }, void 0, false, {
                 fileName: "[project]/components/modules/clientes/clientes-module.tsx",
-                lineNumber: 181,
+                lineNumber: 211,
                 columnNumber: 9
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$confirm$2d$dialog$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["ConfirmDialog"], {
@@ -6162,13 +6317,13 @@ function ClientesModule() {
                 message: "¿Estás seguro de que deseas eliminar este cliente? Esta acción no se puede deshacer."
             }, void 0, false, {
                 fileName: "[project]/components/modules/clientes/clientes-module.tsx",
-                lineNumber: 188,
+                lineNumber: 218,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/modules/clientes/clientes-module.tsx",
-        lineNumber: 131,
+        lineNumber: 161,
         columnNumber: 5
     }, this);
 }
@@ -6192,7 +6347,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2
 ;
 ;
 ;
-function LeadsTable({ leads, getEstadoColor, onDelete, onUpdate, onViewHistory, onConvertToClient }) {
+function LeadsTable({ leads, getEstadoColor, onEdit, onDelete, onUpdate, onViewHistory, onConvertToClient }) {
     const handleSendEmail = (lead)=>{
         if (lead.email) {
             const subject = encodeURIComponent(`Consulta: ${lead.tipoConsulta}`);
@@ -6222,7 +6377,7 @@ function LeadsTable({ leads, getEstadoColor, onDelete, onUpdate, onViewHistory, 
                                     children: "Nombre"
                                 }, void 0, false, {
                                     fileName: "[project]/components/modules/leads/leads-table.tsx",
-                                    lineNumber: 58,
+                                    lineNumber: 60,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
@@ -6230,7 +6385,7 @@ function LeadsTable({ leads, getEstadoColor, onDelete, onUpdate, onViewHistory, 
                                     children: "Email"
                                 }, void 0, false, {
                                     fileName: "[project]/components/modules/leads/leads-table.tsx",
-                                    lineNumber: 59,
+                                    lineNumber: 61,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
@@ -6238,7 +6393,7 @@ function LeadsTable({ leads, getEstadoColor, onDelete, onUpdate, onViewHistory, 
                                     children: "Tipo"
                                 }, void 0, false, {
                                     fileName: "[project]/components/modules/leads/leads-table.tsx",
-                                    lineNumber: 60,
+                                    lineNumber: 62,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
@@ -6246,7 +6401,7 @@ function LeadsTable({ leads, getEstadoColor, onDelete, onUpdate, onViewHistory, 
                                     children: "Estado"
                                 }, void 0, false, {
                                     fileName: "[project]/components/modules/leads/leads-table.tsx",
-                                    lineNumber: 61,
+                                    lineNumber: 63,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
@@ -6254,7 +6409,15 @@ function LeadsTable({ leads, getEstadoColor, onDelete, onUpdate, onViewHistory, 
                                     children: "Vendedor"
                                 }, void 0, false, {
                                     fileName: "[project]/components/modules/leads/leads-table.tsx",
-                                    lineNumber: 62,
+                                    lineNumber: 64,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
+                                    className: "text-left py-3 px-4 font-semibold text-foreground hidden xl:table-cell",
+                                    children: "Colaborador"
+                                }, void 0, false, {
+                                    fileName: "[project]/components/modules/leads/leads-table.tsx",
+                                    lineNumber: 65,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
@@ -6262,18 +6425,18 @@ function LeadsTable({ leads, getEstadoColor, onDelete, onUpdate, onViewHistory, 
                                     children: "Acciones"
                                 }, void 0, false, {
                                     fileName: "[project]/components/modules/leads/leads-table.tsx",
-                                    lineNumber: 63,
+                                    lineNumber: 66,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/modules/leads/leads-table.tsx",
-                            lineNumber: 57,
+                            lineNumber: 59,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/components/modules/leads/leads-table.tsx",
-                        lineNumber: 56,
+                        lineNumber: 58,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("tbody", {
@@ -6289,7 +6452,7 @@ function LeadsTable({ leads, getEstadoColor, onDelete, onUpdate, onViewHistory, 
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/modules/leads/leads-table.tsx",
-                                        lineNumber: 69,
+                                        lineNumber: 72,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -6297,7 +6460,7 @@ function LeadsTable({ leads, getEstadoColor, onDelete, onUpdate, onViewHistory, 
                                         children: lead.email
                                     }, void 0, false, {
                                         fileName: "[project]/components/modules/leads/leads-table.tsx",
-                                        lineNumber: 72,
+                                        lineNumber: 75,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -6305,7 +6468,7 @@ function LeadsTable({ leads, getEstadoColor, onDelete, onUpdate, onViewHistory, 
                                         children: lead.tipoConsulta
                                     }, void 0, false, {
                                         fileName: "[project]/components/modules/leads/leads-table.tsx",
-                                        lineNumber: 73,
+                                        lineNumber: 76,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -6315,12 +6478,12 @@ function LeadsTable({ leads, getEstadoColor, onDelete, onUpdate, onViewHistory, 
                                             children: lead.estado
                                         }, void 0, false, {
                                             fileName: "[project]/components/modules/leads/leads-table.tsx",
-                                            lineNumber: 75,
+                                            lineNumber: 78,
                                             columnNumber: 17
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/components/modules/leads/leads-table.tsx",
-                                        lineNumber: 74,
+                                        lineNumber: 77,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -6328,7 +6491,15 @@ function LeadsTable({ leads, getEstadoColor, onDelete, onUpdate, onViewHistory, 
                                         children: lead.vendedorAsignado || '-'
                                     }, void 0, false, {
                                         fileName: "[project]/components/modules/leads/leads-table.tsx",
-                                        lineNumber: 79,
+                                        lineNumber: 82,
+                                        columnNumber: 15
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
+                                        className: "py-3 px-4 text-muted-foreground hidden xl:table-cell text-xs",
+                                        children: lead.vendedorColaborador || '-'
+                                    }, void 0, false, {
+                                        fileName: "[project]/components/modules/leads/leads-table.tsx",
+                                        lineNumber: 83,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -6346,12 +6517,12 @@ function LeadsTable({ leads, getEstadoColor, onDelete, onUpdate, onViewHistory, 
                                                         className: "w-4 h-4"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/modules/leads/leads-table.tsx",
-                                                        lineNumber: 89,
+                                                        lineNumber: 93,
                                                         columnNumber: 21
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/modules/leads/leads-table.tsx",
-                                                    lineNumber: 82,
+                                                    lineNumber: 86,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
@@ -6364,12 +6535,12 @@ function LeadsTable({ leads, getEstadoColor, onDelete, onUpdate, onViewHistory, 
                                                         className: "w-4 h-4"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/modules/leads/leads-table.tsx",
-                                                        lineNumber: 98,
+                                                        lineNumber: 102,
                                                         columnNumber: 21
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/modules/leads/leads-table.tsx",
-                                                    lineNumber: 91,
+                                                    lineNumber: 95,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
@@ -6382,12 +6553,12 @@ function LeadsTable({ leads, getEstadoColor, onDelete, onUpdate, onViewHistory, 
                                                         className: "w-4 h-4"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/modules/leads/leads-table.tsx",
-                                                        lineNumber: 107,
+                                                        lineNumber: 111,
                                                         columnNumber: 21
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/modules/leads/leads-table.tsx",
-                                                    lineNumber: 100,
+                                                    lineNumber: 104,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
@@ -6400,32 +6571,30 @@ function LeadsTable({ leads, getEstadoColor, onDelete, onUpdate, onViewHistory, 
                                                         className: "w-4 h-4"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/modules/leads/leads-table.tsx",
-                                                        lineNumber: 116,
+                                                        lineNumber: 120,
                                                         columnNumber: 21
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/modules/leads/leads-table.tsx",
-                                                    lineNumber: 109,
+                                                    lineNumber: 113,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
                                                     size: "sm",
                                                     variant: "ghost",
-                                                    onClick: ()=>onUpdate?.(lead.id, {
-                                                            estado: "En gestión"
-                                                        }),
+                                                    onClick: ()=>onEdit?.(lead),
                                                     title: "Editar",
                                                     className: "h-8 w-8 p-0 text-blue-600 hover:bg-blue-100 dark:hover:bg-blue-900/20",
                                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$pen$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Edit2$3e$__["Edit2"], {
                                                         className: "w-4 h-4"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/modules/leads/leads-table.tsx",
-                                                        lineNumber: 125,
+                                                        lineNumber: 129,
                                                         columnNumber: 21
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/modules/leads/leads-table.tsx",
-                                                    lineNumber: 118,
+                                                    lineNumber: 122,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
@@ -6438,40 +6607,40 @@ function LeadsTable({ leads, getEstadoColor, onDelete, onUpdate, onViewHistory, 
                                                         className: "w-4 h-4"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/modules/leads/leads-table.tsx",
-                                                        lineNumber: 134,
+                                                        lineNumber: 138,
                                                         columnNumber: 21
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/modules/leads/leads-table.tsx",
-                                                    lineNumber: 127,
+                                                    lineNumber: 131,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/modules/leads/leads-table.tsx",
-                                            lineNumber: 81,
+                                            lineNumber: 85,
                                             columnNumber: 17
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/components/modules/leads/leads-table.tsx",
-                                        lineNumber: 80,
+                                        lineNumber: 84,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, lead.id, true, {
                                 fileName: "[project]/components/modules/leads/leads-table.tsx",
-                                lineNumber: 68,
+                                lineNumber: 71,
                                 columnNumber: 13
                             }, this))
                     }, void 0, false, {
                         fileName: "[project]/components/modules/leads/leads-table.tsx",
-                        lineNumber: 66,
+                        lineNumber: 69,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/modules/leads/leads-table.tsx",
-                lineNumber: 55,
+                lineNumber: 57,
                 columnNumber: 7
             }, this),
             leads.length === 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -6481,18 +6650,18 @@ function LeadsTable({ leads, getEstadoColor, onDelete, onUpdate, onViewHistory, 
                     children: "No hay leads para mostrar"
                 }, void 0, false, {
                     fileName: "[project]/components/modules/leads/leads-table.tsx",
-                    lineNumber: 144,
+                    lineNumber: 148,
                     columnNumber: 11
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/modules/leads/leads-table.tsx",
-                lineNumber: 143,
+                lineNumber: 147,
                 columnNumber: 9
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/modules/leads/leads-table.tsx",
-        lineNumber: 54,
+        lineNumber: 56,
         columnNumber: 5
     }, this);
 }
@@ -6513,7 +6682,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$re
 ;
 ;
 ;
-function LeadModal({ isOpen, onClose, onSubmit, paquetesDisponibles = [], vendedores = [] }) {
+function LeadModal({ isOpen, onClose, onSubmit, lead, paquetesDisponibles = [], vendedores = [] }) {
     const [formData, setFormData] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])({
         nombre: "",
         apellido: "",
@@ -6524,10 +6693,51 @@ function LeadModal({ isOpen, onClose, onSubmit, paquetesDisponibles = [], vended
         tipoConsulta: "Paquete turístico",
         origen: "Web",
         vendedorAsignado: "",
+        vendedorColaborador: "",
         estado: "Nuevo",
         notasInternas: "",
         paqueteSugerido: ""
     });
+    // Cargar datos del lead al editar
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(()=>{
+        if (lead && isOpen) {
+            setFormData({
+                nombre: lead.nombre || "",
+                apellido: lead.apellido || "",
+                email: lead.email || "",
+                telefono: lead.telefono || "",
+                pais: lead.pais || "",
+                ciudad: lead.ciudad || "",
+                tipoConsulta: lead.tipo_consulta || lead.tipoConsulta || "Paquete turístico",
+                origen: lead.origen || "Web",
+                vendedorAsignado: lead.vendedor_asignado_id || lead.vendedorAsignado || "",
+                vendedorColaborador: lead.vendedor_colaborador_id || lead.vendedorColaborador || "",
+                estado: lead.estado || "Nuevo",
+                notasInternas: lead.notas_internas || lead.notasInternas || "",
+                paqueteSugerido: lead.paquete_sugerido_id || lead.paqueteSugerido || ""
+            });
+        } else if (!isOpen) {
+            // Reset form cuando se cierra el modal
+            setFormData({
+                nombre: "",
+                apellido: "",
+                email: "",
+                telefono: "",
+                pais: "",
+                ciudad: "",
+                tipoConsulta: "Paquete turístico",
+                origen: "Web",
+                vendedorAsignado: "",
+                vendedorColaborador: "",
+                estado: "Nuevo",
+                notasInternas: "",
+                paqueteSugerido: ""
+            });
+        }
+    }, [
+        lead,
+        isOpen
+    ]);
     const handleSubmit = (e)=>{
         e.preventDefault();
         // Mapear campos de camelCase a snake_case para la base de datos
@@ -6547,6 +6757,10 @@ function LeadModal({ isOpen, onClose, onSubmit, paquetesDisponibles = [], vended
         if (formData.vendedorAsignado) {
             dataToSubmit.vendedor_asignado_id = formData.vendedorAsignado;
         }
+        // Solo agregar vendedor_colaborador_id si se seleccionó un vendedor colaborador
+        if (formData.vendedorColaborador) {
+            dataToSubmit.vendedor_colaborador_id = formData.vendedorColaborador;
+        }
         // Solo agregar paquete_sugerido_id si se seleccionó un paquete
         if (formData.paqueteSugerido) {
             dataToSubmit.paquete_sugerido_id = formData.paqueteSugerido;
@@ -6562,6 +6776,7 @@ function LeadModal({ isOpen, onClose, onSubmit, paquetesDisponibles = [], vended
             tipoConsulta: "Paquete turístico",
             origen: "Web",
             vendedorAsignado: "",
+            vendedorColaborador: "",
             estado: "Nuevo",
             notasInternas: "",
             paqueteSugerido: ""
@@ -6662,7 +6877,7 @@ function LeadModal({ isOpen, onClose, onSubmit, paquetesDisponibles = [], vended
                 onClick: onClose
             }, void 0, false, {
                 fileName: "[project]/components/modules/leads/lead-modal.tsx",
-                lineNumber: 96,
+                lineNumber: 142,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -6673,10 +6888,10 @@ function LeadModal({ isOpen, onClose, onSubmit, paquetesDisponibles = [], vended
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                                 className: "text-lg sm:text-xl font-bold text-foreground",
-                                children: "Nuevo Lead"
+                                children: lead ? "Editar Lead" : "Nuevo Lead"
                             }, void 0, false, {
                                 fileName: "[project]/components/modules/leads/lead-modal.tsx",
-                                lineNumber: 102,
+                                lineNumber: 148,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
@@ -6688,18 +6903,18 @@ function LeadModal({ isOpen, onClose, onSubmit, paquetesDisponibles = [], vended
                                     className: "w-5 h-5"
                                 }, void 0, false, {
                                     fileName: "[project]/components/modules/leads/lead-modal.tsx",
-                                    lineNumber: 104,
+                                    lineNumber: 150,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/components/modules/leads/lead-modal.tsx",
-                                lineNumber: 103,
+                                lineNumber: 149,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/modules/leads/lead-modal.tsx",
-                        lineNumber: 101,
+                        lineNumber: 147,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("form", {
@@ -6716,7 +6931,7 @@ function LeadModal({ isOpen, onClose, onSubmit, paquetesDisponibles = [], vended
                                                 children: "Nombre"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/modules/leads/lead-modal.tsx",
-                                                lineNumber: 113,
+                                                lineNumber: 159,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -6731,13 +6946,13 @@ function LeadModal({ isOpen, onClose, onSubmit, paquetesDisponibles = [], vended
                                                     })
                                             }, void 0, false, {
                                                 fileName: "[project]/components/modules/leads/lead-modal.tsx",
-                                                lineNumber: 114,
+                                                lineNumber: 160,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/modules/leads/lead-modal.tsx",
-                                        lineNumber: 112,
+                                        lineNumber: 158,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -6747,7 +6962,7 @@ function LeadModal({ isOpen, onClose, onSubmit, paquetesDisponibles = [], vended
                                                 children: "Apellido"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/modules/leads/lead-modal.tsx",
-                                                lineNumber: 124,
+                                                lineNumber: 170,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -6762,19 +6977,19 @@ function LeadModal({ isOpen, onClose, onSubmit, paquetesDisponibles = [], vended
                                                     })
                                             }, void 0, false, {
                                                 fileName: "[project]/components/modules/leads/lead-modal.tsx",
-                                                lineNumber: 125,
+                                                lineNumber: 171,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/modules/leads/lead-modal.tsx",
-                                        lineNumber: 123,
+                                        lineNumber: 169,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/modules/leads/lead-modal.tsx",
-                                lineNumber: 111,
+                                lineNumber: 157,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -6787,7 +7002,7 @@ function LeadModal({ isOpen, onClose, onSubmit, paquetesDisponibles = [], vended
                                                 children: "Email"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/modules/leads/lead-modal.tsx",
-                                                lineNumber: 139,
+                                                lineNumber: 185,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -6802,13 +7017,13 @@ function LeadModal({ isOpen, onClose, onSubmit, paquetesDisponibles = [], vended
                                                     })
                                             }, void 0, false, {
                                                 fileName: "[project]/components/modules/leads/lead-modal.tsx",
-                                                lineNumber: 140,
+                                                lineNumber: 186,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/modules/leads/lead-modal.tsx",
-                                        lineNumber: 138,
+                                        lineNumber: 184,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -6818,7 +7033,7 @@ function LeadModal({ isOpen, onClose, onSubmit, paquetesDisponibles = [], vended
                                                 children: "Teléfono"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/modules/leads/lead-modal.tsx",
-                                                lineNumber: 150,
+                                                lineNumber: 196,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -6833,19 +7048,19 @@ function LeadModal({ isOpen, onClose, onSubmit, paquetesDisponibles = [], vended
                                                     })
                                             }, void 0, false, {
                                                 fileName: "[project]/components/modules/leads/lead-modal.tsx",
-                                                lineNumber: 151,
+                                                lineNumber: 197,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/modules/leads/lead-modal.tsx",
-                                        lineNumber: 149,
+                                        lineNumber: 195,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/modules/leads/lead-modal.tsx",
-                                lineNumber: 137,
+                                lineNumber: 183,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -6858,7 +7073,7 @@ function LeadModal({ isOpen, onClose, onSubmit, paquetesDisponibles = [], vended
                                                 children: "País"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/modules/leads/lead-modal.tsx",
-                                                lineNumber: 165,
+                                                lineNumber: 211,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("select", {
@@ -6874,7 +7089,7 @@ function LeadModal({ isOpen, onClose, onSubmit, paquetesDisponibles = [], vended
                                                         children: "Selecciona país"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/modules/leads/lead-modal.tsx",
-                                                        lineNumber: 171,
+                                                        lineNumber: 217,
                                                         columnNumber: 17
                                                     }, this),
                                                     paises.map((pais)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
@@ -6882,19 +7097,19 @@ function LeadModal({ isOpen, onClose, onSubmit, paquetesDisponibles = [], vended
                                                             children: pais
                                                         }, pais, false, {
                                                             fileName: "[project]/components/modules/leads/lead-modal.tsx",
-                                                            lineNumber: 173,
+                                                            lineNumber: 219,
                                                             columnNumber: 19
                                                         }, this))
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/components/modules/leads/lead-modal.tsx",
-                                                lineNumber: 166,
+                                                lineNumber: 212,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/modules/leads/lead-modal.tsx",
-                                        lineNumber: 164,
+                                        lineNumber: 210,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -6904,7 +7119,7 @@ function LeadModal({ isOpen, onClose, onSubmit, paquetesDisponibles = [], vended
                                                 children: "Ciudad"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/modules/leads/lead-modal.tsx",
-                                                lineNumber: 180,
+                                                lineNumber: 226,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -6918,19 +7133,19 @@ function LeadModal({ isOpen, onClose, onSubmit, paquetesDisponibles = [], vended
                                                     })
                                             }, void 0, false, {
                                                 fileName: "[project]/components/modules/leads/lead-modal.tsx",
-                                                lineNumber: 181,
+                                                lineNumber: 227,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/modules/leads/lead-modal.tsx",
-                                        lineNumber: 179,
+                                        lineNumber: 225,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/modules/leads/lead-modal.tsx",
-                                lineNumber: 163,
+                                lineNumber: 209,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -6943,7 +7158,7 @@ function LeadModal({ isOpen, onClose, onSubmit, paquetesDisponibles = [], vended
                                                 children: "Tipo de Consulta"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/modules/leads/lead-modal.tsx",
-                                                lineNumber: 194,
+                                                lineNumber: 240,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("select", {
@@ -6958,18 +7173,18 @@ function LeadModal({ isOpen, onClose, onSubmit, paquetesDisponibles = [], vended
                                                         children: tipo
                                                     }, tipo, false, {
                                                         fileName: "[project]/components/modules/leads/lead-modal.tsx",
-                                                        lineNumber: 201,
+                                                        lineNumber: 247,
                                                         columnNumber: 19
                                                     }, this))
                                             }, void 0, false, {
                                                 fileName: "[project]/components/modules/leads/lead-modal.tsx",
-                                                lineNumber: 195,
+                                                lineNumber: 241,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/modules/leads/lead-modal.tsx",
-                                        lineNumber: 193,
+                                        lineNumber: 239,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -6979,7 +7194,7 @@ function LeadModal({ isOpen, onClose, onSubmit, paquetesDisponibles = [], vended
                                                 children: "Origen"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/modules/leads/lead-modal.tsx",
-                                                lineNumber: 208,
+                                                lineNumber: 254,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("select", {
@@ -6994,24 +7209,24 @@ function LeadModal({ isOpen, onClose, onSubmit, paquetesDisponibles = [], vended
                                                         children: origen
                                                     }, origen, false, {
                                                         fileName: "[project]/components/modules/leads/lead-modal.tsx",
-                                                        lineNumber: 215,
+                                                        lineNumber: 261,
                                                         columnNumber: 19
                                                     }, this))
                                             }, void 0, false, {
                                                 fileName: "[project]/components/modules/leads/lead-modal.tsx",
-                                                lineNumber: 209,
+                                                lineNumber: 255,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/modules/leads/lead-modal.tsx",
-                                        lineNumber: 207,
+                                        lineNumber: 253,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/modules/leads/lead-modal.tsx",
-                                lineNumber: 192,
+                                lineNumber: 238,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7024,7 +7239,7 @@ function LeadModal({ isOpen, onClose, onSubmit, paquetesDisponibles = [], vended
                                                 children: "Vendedor Asignado"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/modules/leads/lead-modal.tsx",
-                                                lineNumber: 226,
+                                                lineNumber: 272,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("select", {
@@ -7041,7 +7256,7 @@ function LeadModal({ isOpen, onClose, onSubmit, paquetesDisponibles = [], vended
                                                         children: "Selecciona vendedor"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/modules/leads/lead-modal.tsx",
-                                                        lineNumber: 233,
+                                                        lineNumber: 279,
                                                         columnNumber: 17
                                                     }, this),
                                                     vendedores.map((vendedor)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
@@ -7053,19 +7268,19 @@ function LeadModal({ isOpen, onClose, onSubmit, paquetesDisponibles = [], vended
                                                             ]
                                                         }, vendedor.id, true, {
                                                             fileName: "[project]/components/modules/leads/lead-modal.tsx",
-                                                            lineNumber: 235,
+                                                            lineNumber: 281,
                                                             columnNumber: 19
                                                         }, this))
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/components/modules/leads/lead-modal.tsx",
-                                                lineNumber: 227,
+                                                lineNumber: 273,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/modules/leads/lead-modal.tsx",
-                                        lineNumber: 225,
+                                        lineNumber: 271,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7075,7 +7290,7 @@ function LeadModal({ isOpen, onClose, onSubmit, paquetesDisponibles = [], vended
                                                 children: "Estado"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/modules/leads/lead-modal.tsx",
-                                                lineNumber: 242,
+                                                lineNumber: 288,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("select", {
@@ -7090,24 +7305,24 @@ function LeadModal({ isOpen, onClose, onSubmit, paquetesDisponibles = [], vended
                                                         children: estado
                                                     }, estado, false, {
                                                         fileName: "[project]/components/modules/leads/lead-modal.tsx",
-                                                        lineNumber: 249,
+                                                        lineNumber: 295,
                                                         columnNumber: 19
                                                     }, this))
                                             }, void 0, false, {
                                                 fileName: "[project]/components/modules/leads/lead-modal.tsx",
-                                                lineNumber: 243,
+                                                lineNumber: 289,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/modules/leads/lead-modal.tsx",
-                                        lineNumber: 241,
+                                        lineNumber: 287,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/modules/leads/lead-modal.tsx",
-                                lineNumber: 224,
+                                lineNumber: 270,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7117,7 +7332,7 @@ function LeadModal({ isOpen, onClose, onSubmit, paquetesDisponibles = [], vended
                                         children: "Paquete Sugerido"
                                     }, void 0, false, {
                                         fileName: "[project]/components/modules/leads/lead-modal.tsx",
-                                        lineNumber: 259,
+                                        lineNumber: 305,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("select", {
@@ -7133,7 +7348,7 @@ function LeadModal({ isOpen, onClose, onSubmit, paquetesDisponibles = [], vended
                                                 children: "Selecciona paquete"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/modules/leads/lead-modal.tsx",
-                                                lineNumber: 265,
+                                                lineNumber: 311,
                                                 columnNumber: 15
                                             }, this),
                                             paquetesDisponibles.map((paquete)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
@@ -7141,19 +7356,69 @@ function LeadModal({ isOpen, onClose, onSubmit, paquetesDisponibles = [], vended
                                                     children: paquete.nombre
                                                 }, paquete.id, false, {
                                                     fileName: "[project]/components/modules/leads/lead-modal.tsx",
-                                                    lineNumber: 267,
+                                                    lineNumber: 313,
                                                     columnNumber: 17
                                                 }, this))
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/modules/leads/lead-modal.tsx",
-                                        lineNumber: 260,
+                                        lineNumber: 306,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/modules/leads/lead-modal.tsx",
-                                lineNumber: 258,
+                                lineNumber: 304,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
+                                        className: "block text-sm font-medium text-foreground mb-2",
+                                        children: "Vendedor Colaborador"
+                                    }, void 0, false, {
+                                        fileName: "[project]/components/modules/leads/lead-modal.tsx",
+                                        lineNumber: 322,
+                                        columnNumber: 13
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("select", {
+                                        className: "w-full px-3 py-2 border border-border rounded-lg bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-orange-500",
+                                        value: formData.vendedorColaborador,
+                                        onChange: (e)=>setFormData({
+                                                ...formData,
+                                                vendedorColaborador: e.target.value
+                                            }),
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
+                                                value: "",
+                                                children: "Selecciona vendedor colaborador"
+                                            }, void 0, false, {
+                                                fileName: "[project]/components/modules/leads/lead-modal.tsx",
+                                                lineNumber: 328,
+                                                columnNumber: 15
+                                            }, this),
+                                            vendedores.filter((vendedor)=>vendedor.id !== formData.vendedorAsignado).map((vendedor)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
+                                                    value: vendedor.id,
+                                                    children: [
+                                                        vendedor.nombre,
+                                                        " ",
+                                                        vendedor.apellido
+                                                    ]
+                                                }, vendedor.id, true, {
+                                                    fileName: "[project]/components/modules/leads/lead-modal.tsx",
+                                                    lineNumber: 332,
+                                                    columnNumber: 19
+                                                }, this))
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/components/modules/leads/lead-modal.tsx",
+                                        lineNumber: 323,
+                                        columnNumber: 13
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/components/modules/leads/lead-modal.tsx",
+                                lineNumber: 321,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7163,7 +7428,7 @@ function LeadModal({ isOpen, onClose, onSubmit, paquetesDisponibles = [], vended
                                         children: "Notas Internas"
                                     }, void 0, false, {
                                         fileName: "[project]/components/modules/leads/lead-modal.tsx",
-                                        lineNumber: 276,
+                                        lineNumber: 341,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("textarea", {
@@ -7176,13 +7441,13 @@ function LeadModal({ isOpen, onClose, onSubmit, paquetesDisponibles = [], vended
                                             })
                                     }, void 0, false, {
                                         fileName: "[project]/components/modules/leads/lead-modal.tsx",
-                                        lineNumber: 277,
+                                        lineNumber: 342,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/modules/leads/lead-modal.tsx",
-                                lineNumber: 275,
+                                lineNumber: 340,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7196,7 +7461,7 @@ function LeadModal({ isOpen, onClose, onSubmit, paquetesDisponibles = [], vended
                                         children: "Cancelar"
                                     }, void 0, false, {
                                         fileName: "[project]/components/modules/leads/lead-modal.tsx",
-                                        lineNumber: 287,
+                                        lineNumber: 352,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
@@ -7205,31 +7470,31 @@ function LeadModal({ isOpen, onClose, onSubmit, paquetesDisponibles = [], vended
                                         children: "Guardar Lead"
                                     }, void 0, false, {
                                         fileName: "[project]/components/modules/leads/lead-modal.tsx",
-                                        lineNumber: 295,
+                                        lineNumber: 360,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/modules/leads/lead-modal.tsx",
-                                lineNumber: 286,
+                                lineNumber: 351,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/modules/leads/lead-modal.tsx",
-                        lineNumber: 109,
+                        lineNumber: 155,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/modules/leads/lead-modal.tsx",
-                lineNumber: 99,
+                lineNumber: 145,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/modules/leads/lead-modal.tsx",
-        lineNumber: 94,
+        lineNumber: 140,
         columnNumber: 5
     }, this);
 }
@@ -8346,6 +8611,7 @@ function LeadsModule() {
     const [isRulesOpen, setIsRulesOpen] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(false);
     const [isConvertModalOpen, setIsConvertModalOpen] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(false);
     const [selectedLeadForConversion, setSelectedLeadForConversion] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(null);
+    const [editingLead, setEditingLead] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(null);
     const [selectedLeadHistory, setSelectedLeadHistory] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(null);
     const [leadHistorial, setLeadHistorial] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])([]);
     const [searchTerm, setSearchTerm] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])("");
@@ -8382,16 +8648,32 @@ function LeadsModule() {
     };
     const handleAddLead = async (data)=>{
         try {
-            const newLead = await __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$supabase$2f$queries$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["leadsQueries"].create(data);
-            setLeads([
-                ...leads,
-                newLead
-            ]);
+            if (editingLead) {
+                // Actualizar lead existente
+                await __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$supabase$2f$queries$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["leadsQueries"].update(editingLead.id, data);
+                await fetchData();
+                setEditingLead(null);
+            } else {
+                // Crear nuevo lead
+                const newLead = await __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$supabase$2f$queries$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["leadsQueries"].create(data);
+                setLeads([
+                    ...leads,
+                    newLead
+                ]);
+            }
             setIsModalOpen(false);
         } catch (err) {
-            console.error("Error al crear lead:", err);
-            alert("No se pudo crear el lead");
+            console.error("Error al guardar lead:", err);
+            alert("No se pudo guardar el lead");
         }
+    };
+    const handleEditLead = (lead)=>{
+        setEditingLead(lead);
+        setIsModalOpen(true);
+    };
+    const handleCloseModal = ()=>{
+        setIsModalOpen(false);
+        setEditingLead(null);
     };
     const handleImportLeads = async (importedLeads)=>{
         try {
@@ -8491,7 +8773,7 @@ function LeadsModule() {
                             children: "Gestión de Leads"
                         }, void 0, false, {
                             fileName: "[project]/components/modules/leads/leads-module.tsx",
-                            lineNumber: 176,
+                            lineNumber: 195,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -8499,13 +8781,13 @@ function LeadsModule() {
                             children: "Administra tu pipeline de ventas con seguimiento completo de leads turísticos"
                         }, void 0, false, {
                             fileName: "[project]/components/modules/leads/leads-module.tsx",
-                            lineNumber: 177,
+                            lineNumber: 196,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/modules/leads/leads-module.tsx",
-                    lineNumber: 175,
+                    lineNumber: 194,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Card"], {
@@ -8519,7 +8801,7 @@ function LeadsModule() {
                                     className: "animate-spin rounded-full h-12 w-12 border-b-2 border-orange-600 mx-auto mb-4"
                                 }, void 0, false, {
                                     fileName: "[project]/components/modules/leads/leads-module.tsx",
-                                    lineNumber: 184,
+                                    lineNumber: 203,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -8527,29 +8809,29 @@ function LeadsModule() {
                                     children: "Cargando leads..."
                                 }, void 0, false, {
                                     fileName: "[project]/components/modules/leads/leads-module.tsx",
-                                    lineNumber: 185,
+                                    lineNumber: 204,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/modules/leads/leads-module.tsx",
-                            lineNumber: 183,
+                            lineNumber: 202,
                             columnNumber: 13
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/components/modules/leads/leads-module.tsx",
-                        lineNumber: 182,
+                        lineNumber: 201,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/components/modules/leads/leads-module.tsx",
-                    lineNumber: 181,
+                    lineNumber: 200,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/components/modules/leads/leads-module.tsx",
-            lineNumber: 174,
+            lineNumber: 193,
             columnNumber: 7
         }, this);
     }
@@ -8564,7 +8846,7 @@ function LeadsModule() {
                             children: "Gestión de Leads"
                         }, void 0, false, {
                             fileName: "[project]/components/modules/leads/leads-module.tsx",
-                            lineNumber: 197,
+                            lineNumber: 216,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -8572,13 +8854,13 @@ function LeadsModule() {
                             children: "Administra tu pipeline de ventas con seguimiento completo de leads turísticos"
                         }, void 0, false, {
                             fileName: "[project]/components/modules/leads/leads-module.tsx",
-                            lineNumber: 198,
+                            lineNumber: 217,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/modules/leads/leads-module.tsx",
-                    lineNumber: 196,
+                    lineNumber: 215,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Card"], {
@@ -8593,7 +8875,7 @@ function LeadsModule() {
                                     children: error
                                 }, void 0, false, {
                                     fileName: "[project]/components/modules/leads/leads-module.tsx",
-                                    lineNumber: 205,
+                                    lineNumber: 224,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
@@ -8602,29 +8884,29 @@ function LeadsModule() {
                                     children: "Reintentar"
                                 }, void 0, false, {
                                     fileName: "[project]/components/modules/leads/leads-module.tsx",
-                                    lineNumber: 206,
+                                    lineNumber: 225,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/modules/leads/leads-module.tsx",
-                            lineNumber: 204,
+                            lineNumber: 223,
                             columnNumber: 13
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/components/modules/leads/leads-module.tsx",
-                        lineNumber: 203,
+                        lineNumber: 222,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/components/modules/leads/leads-module.tsx",
-                    lineNumber: 202,
+                    lineNumber: 221,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/components/modules/leads/leads-module.tsx",
-            lineNumber: 195,
+            lineNumber: 214,
             columnNumber: 7
         }, this);
     }
@@ -8638,7 +8920,7 @@ function LeadsModule() {
                         children: "Gestión de Leads"
                     }, void 0, false, {
                         fileName: "[project]/components/modules/leads/leads-module.tsx",
-                        lineNumber: 219,
+                        lineNumber: 238,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -8646,13 +8928,13 @@ function LeadsModule() {
                         children: "Administra tu pipeline de ventas con seguimiento completo de leads turísticos"
                     }, void 0, false, {
                         fileName: "[project]/components/modules/leads/leads-module.tsx",
-                        lineNumber: 220,
+                        lineNumber: 239,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/modules/leads/leads-module.tsx",
-                lineNumber: 218,
+                lineNumber: 237,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Card"], {
@@ -8670,7 +8952,7 @@ function LeadsModule() {
                                             className: "absolute left-3 top-3 w-4 h-4 text-muted-foreground"
                                         }, void 0, false, {
                                             fileName: "[project]/components/modules/leads/leads-module.tsx",
-                                            lineNumber: 229,
+                                            lineNumber: 248,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -8681,13 +8963,13 @@ function LeadsModule() {
                                             onChange: (e)=>setSearchTerm(e.target.value)
                                         }, void 0, false, {
                                             fileName: "[project]/components/modules/leads/leads-module.tsx",
-                                            lineNumber: 230,
+                                            lineNumber: 249,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/modules/leads/leads-module.tsx",
-                                    lineNumber: 228,
+                                    lineNumber: 247,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -8701,14 +8983,14 @@ function LeadsModule() {
                                                     className: "w-4 h-4"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/modules/leads/leads-module.tsx",
-                                                    lineNumber: 243,
+                                                    lineNumber: 262,
                                                     columnNumber: 17
                                                 }, this),
                                                 "Lead"
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/modules/leads/leads-module.tsx",
-                                            lineNumber: 239,
+                                            lineNumber: 258,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
@@ -8719,14 +9001,14 @@ function LeadsModule() {
                                                     className: "w-4 h-4"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/modules/leads/leads-module.tsx",
-                                                    lineNumber: 250,
+                                                    lineNumber: 269,
                                                     columnNumber: 17
                                                 }, this),
                                                 "Importar"
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/modules/leads/leads-module.tsx",
-                                            lineNumber: 246,
+                                            lineNumber: 265,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
@@ -8737,60 +9019,62 @@ function LeadsModule() {
                                                     className: "w-4 h-4"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/modules/leads/leads-module.tsx",
-                                                    lineNumber: 257,
+                                                    lineNumber: 276,
                                                     columnNumber: 17
                                                 }, this),
                                                 "Reglas"
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/modules/leads/leads-module.tsx",
-                                            lineNumber: 253,
+                                            lineNumber: 272,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/modules/leads/leads-module.tsx",
-                                    lineNumber: 238,
+                                    lineNumber: 257,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/modules/leads/leads-module.tsx",
-                            lineNumber: 227,
+                            lineNumber: 246,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/components/modules/leads/leads-module.tsx",
-                        lineNumber: 226,
+                        lineNumber: 245,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$modules$2f$leads$2f$leads$2d$table$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["LeadsTable"], {
                         leads: filteredLeads,
                         getEstadoColor: getEstadoColor,
+                        onEdit: handleEditLead,
                         onDelete: handleDeleteLead,
                         onUpdate: handleUpdateLead,
                         onViewHistory: handleViewHistory,
                         onConvertToClient: handleConvertToClient
                     }, void 0, false, {
                         fileName: "[project]/components/modules/leads/leads-module.tsx",
-                        lineNumber: 264,
+                        lineNumber: 283,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/modules/leads/leads-module.tsx",
-                lineNumber: 225,
+                lineNumber: 244,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$modules$2f$leads$2f$lead$2d$modal$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["LeadModal"], {
                 isOpen: isModalOpen,
-                onClose: ()=>setIsModalOpen(false),
+                onClose: handleCloseModal,
                 onSubmit: handleAddLead,
+                lead: editingLead,
                 paquetesDisponibles: paquetesDisponibles,
                 vendedores: vendedores
             }, void 0, false, {
                 fileName: "[project]/components/modules/leads/leads-module.tsx",
-                lineNumber: 274,
+                lineNumber: 294,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$modules$2f$leads$2f$import$2d$leads$2d$modal$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["ImportLeadsModal"], {
@@ -8799,7 +9083,7 @@ function LeadsModule() {
                 onSubmit: handleImportLeads
             }, void 0, false, {
                 fileName: "[project]/components/modules/leads/leads-module.tsx",
-                lineNumber: 281,
+                lineNumber: 302,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$modules$2f$leads$2f$assignment$2d$rules$2d$modal$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["AssignmentRulesModal"], {
@@ -8807,7 +9091,7 @@ function LeadsModule() {
                 onClose: ()=>setIsRulesOpen(false)
             }, void 0, false, {
                 fileName: "[project]/components/modules/leads/leads-module.tsx",
-                lineNumber: 282,
+                lineNumber: 303,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$modules$2f$clientes$2f$convert$2d$lead$2d$modal$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["ConvertLeadModal"], {
@@ -8821,7 +9105,7 @@ function LeadsModule() {
                 onConvert: handleConvertLead
             }, void 0, false, {
                 fileName: "[project]/components/modules/leads/leads-module.tsx",
-                lineNumber: 283,
+                lineNumber: 304,
                 columnNumber: 7
             }, this),
             selectedLeadHistory && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$modules$2f$leads$2f$lead$2d$history$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["LeadHistory"], {
@@ -8833,13 +9117,13 @@ function LeadsModule() {
                 }
             }, void 0, false, {
                 fileName: "[project]/components/modules/leads/leads-module.tsx",
-                lineNumber: 294,
+                lineNumber: 315,
                 columnNumber: 9
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/modules/leads/leads-module.tsx",
-        lineNumber: 217,
+        lineNumber: 236,
         columnNumber: 5
     }, this);
 }
@@ -9470,11 +9754,43 @@ function PaqueteModal({ isOpen, onClose, onSubmit, editingPaquete }) {
         notas: ""
     });
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(()=>{
-        if (editingPaquete) {
-            setFormData(editingPaquete);
+        if (editingPaquete && isOpen) {
+            setFormData({
+                nombre: editingPaquete.nombre || "",
+                destino: editingPaquete.destino || "",
+                fecha_inicio: editingPaquete.fecha_inicio || "",
+                fecha_fin: editingPaquete.fecha_fin || "",
+                cupos: editingPaquete.cupos || 1,
+                precioAdulto: editingPaquete.precio_adulto || 0,
+                precioMenor: editingPaquete.precio_menor || 0,
+                moneda: editingPaquete.moneda || "USD",
+                tarifa: editingPaquete.tarifa || "Media",
+                servicios: editingPaquete.servicios || "",
+                politicas: editingPaquete.politicas || "",
+                imagen: editingPaquete.imagen || "/paquete-turistico.jpg",
+                notas: editingPaquete.notas || ""
+            });
+        } else if (!isOpen) {
+            // Reset form cuando se cierra el modal
+            setFormData({
+                nombre: "",
+                destino: "",
+                fecha_inicio: "",
+                fecha_fin: "",
+                cupos: 1,
+                precioAdulto: 0,
+                precioMenor: 0,
+                moneda: "USD",
+                tarifa: "Media",
+                servicios: "",
+                politicas: "",
+                imagen: "/paquete-turistico.jpg",
+                notas: ""
+            });
         }
     }, [
-        editingPaquete
+        editingPaquete,
+        isOpen
     ]);
     const handleSubmit = (e)=>{
         e.preventDefault();
@@ -9534,7 +9850,7 @@ function PaqueteModal({ isOpen, onClose, onSubmit, editingPaquete }) {
                 onClick: onClose
             }, void 0, false, {
                 fileName: "[project]/components/modules/paquetes/paquete-modal.tsx",
-                lineNumber: 84,
+                lineNumber: 115,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -9548,7 +9864,7 @@ function PaqueteModal({ isOpen, onClose, onSubmit, editingPaquete }) {
                                 children: editingPaquete ? "Editar Paquete" : "Nuevo Paquete"
                             }, void 0, false, {
                                 fileName: "[project]/components/modules/paquetes/paquete-modal.tsx",
-                                lineNumber: 89,
+                                lineNumber: 120,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
@@ -9560,18 +9876,18 @@ function PaqueteModal({ isOpen, onClose, onSubmit, editingPaquete }) {
                                     className: "w-5 h-5"
                                 }, void 0, false, {
                                     fileName: "[project]/components/modules/paquetes/paquete-modal.tsx",
-                                    lineNumber: 93,
+                                    lineNumber: 124,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/components/modules/paquetes/paquete-modal.tsx",
-                                lineNumber: 92,
+                                lineNumber: 123,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/modules/paquetes/paquete-modal.tsx",
-                        lineNumber: 88,
+                        lineNumber: 119,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("form", {
@@ -9588,7 +9904,7 @@ function PaqueteModal({ isOpen, onClose, onSubmit, editingPaquete }) {
                                                 children: "Nombre del Paquete"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/modules/paquetes/paquete-modal.tsx",
-                                                lineNumber: 102,
+                                                lineNumber: 133,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -9603,13 +9919,13 @@ function PaqueteModal({ isOpen, onClose, onSubmit, editingPaquete }) {
                                                     })
                                             }, void 0, false, {
                                                 fileName: "[project]/components/modules/paquetes/paquete-modal.tsx",
-                                                lineNumber: 103,
+                                                lineNumber: 134,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/modules/paquetes/paquete-modal.tsx",
-                                        lineNumber: 101,
+                                        lineNumber: 132,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -9619,7 +9935,7 @@ function PaqueteModal({ isOpen, onClose, onSubmit, editingPaquete }) {
                                                 children: "Destino"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/modules/paquetes/paquete-modal.tsx",
-                                                lineNumber: 113,
+                                                lineNumber: 144,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -9634,19 +9950,19 @@ function PaqueteModal({ isOpen, onClose, onSubmit, editingPaquete }) {
                                                     })
                                             }, void 0, false, {
                                                 fileName: "[project]/components/modules/paquetes/paquete-modal.tsx",
-                                                lineNumber: 114,
+                                                lineNumber: 145,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/modules/paquetes/paquete-modal.tsx",
-                                        lineNumber: 112,
+                                        lineNumber: 143,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/modules/paquetes/paquete-modal.tsx",
-                                lineNumber: 100,
+                                lineNumber: 131,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -9659,7 +9975,7 @@ function PaqueteModal({ isOpen, onClose, onSubmit, editingPaquete }) {
                                                 children: "Fecha de Inicio"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/modules/paquetes/paquete-modal.tsx",
-                                                lineNumber: 128,
+                                                lineNumber: 159,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -9672,13 +9988,13 @@ function PaqueteModal({ isOpen, onClose, onSubmit, editingPaquete }) {
                                                     })
                                             }, void 0, false, {
                                                 fileName: "[project]/components/modules/paquetes/paquete-modal.tsx",
-                                                lineNumber: 129,
+                                                lineNumber: 160,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/modules/paquetes/paquete-modal.tsx",
-                                        lineNumber: 127,
+                                        lineNumber: 158,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -9688,7 +10004,7 @@ function PaqueteModal({ isOpen, onClose, onSubmit, editingPaquete }) {
                                                 children: "Fecha de Fin"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/modules/paquetes/paquete-modal.tsx",
-                                                lineNumber: 137,
+                                                lineNumber: 168,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -9701,19 +10017,19 @@ function PaqueteModal({ isOpen, onClose, onSubmit, editingPaquete }) {
                                                     })
                                             }, void 0, false, {
                                                 fileName: "[project]/components/modules/paquetes/paquete-modal.tsx",
-                                                lineNumber: 138,
+                                                lineNumber: 169,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/modules/paquetes/paquete-modal.tsx",
-                                        lineNumber: 136,
+                                        lineNumber: 167,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/modules/paquetes/paquete-modal.tsx",
-                                lineNumber: 126,
+                                lineNumber: 157,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -9726,7 +10042,7 @@ function PaqueteModal({ isOpen, onClose, onSubmit, editingPaquete }) {
                                                 children: "Stock/Cupos"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/modules/paquetes/paquete-modal.tsx",
-                                                lineNumber: 150,
+                                                lineNumber: 181,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -9741,13 +10057,13 @@ function PaqueteModal({ isOpen, onClose, onSubmit, editingPaquete }) {
                                                     })
                                             }, void 0, false, {
                                                 fileName: "[project]/components/modules/paquetes/paquete-modal.tsx",
-                                                lineNumber: 151,
+                                                lineNumber: 182,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/modules/paquetes/paquete-modal.tsx",
-                                        lineNumber: 149,
+                                        lineNumber: 180,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -9757,7 +10073,7 @@ function PaqueteModal({ isOpen, onClose, onSubmit, editingPaquete }) {
                                                 children: "Precio Adulto"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/modules/paquetes/paquete-modal.tsx",
-                                                lineNumber: 161,
+                                                lineNumber: 192,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -9772,13 +10088,13 @@ function PaqueteModal({ isOpen, onClose, onSubmit, editingPaquete }) {
                                                     })
                                             }, void 0, false, {
                                                 fileName: "[project]/components/modules/paquetes/paquete-modal.tsx",
-                                                lineNumber: 162,
+                                                lineNumber: 193,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/modules/paquetes/paquete-modal.tsx",
-                                        lineNumber: 160,
+                                        lineNumber: 191,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -9788,7 +10104,7 @@ function PaqueteModal({ isOpen, onClose, onSubmit, editingPaquete }) {
                                                 children: "Precio Menor"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/modules/paquetes/paquete-modal.tsx",
-                                                lineNumber: 172,
+                                                lineNumber: 203,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -9803,13 +10119,13 @@ function PaqueteModal({ isOpen, onClose, onSubmit, editingPaquete }) {
                                                     })
                                             }, void 0, false, {
                                                 fileName: "[project]/components/modules/paquetes/paquete-modal.tsx",
-                                                lineNumber: 173,
+                                                lineNumber: 204,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/modules/paquetes/paquete-modal.tsx",
-                                        lineNumber: 171,
+                                        lineNumber: 202,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -9819,7 +10135,7 @@ function PaqueteModal({ isOpen, onClose, onSubmit, editingPaquete }) {
                                                 children: "Moneda"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/modules/paquetes/paquete-modal.tsx",
-                                                lineNumber: 183,
+                                                lineNumber: 214,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("select", {
@@ -9834,24 +10150,24 @@ function PaqueteModal({ isOpen, onClose, onSubmit, editingPaquete }) {
                                                         children: m
                                                     }, m, false, {
                                                         fileName: "[project]/components/modules/paquetes/paquete-modal.tsx",
-                                                        lineNumber: 190,
+                                                        lineNumber: 221,
                                                         columnNumber: 19
                                                     }, this))
                                             }, void 0, false, {
                                                 fileName: "[project]/components/modules/paquetes/paquete-modal.tsx",
-                                                lineNumber: 184,
+                                                lineNumber: 215,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/modules/paquetes/paquete-modal.tsx",
-                                        lineNumber: 182,
+                                        lineNumber: 213,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/modules/paquetes/paquete-modal.tsx",
-                                lineNumber: 148,
+                                lineNumber: 179,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -9861,7 +10177,7 @@ function PaqueteModal({ isOpen, onClose, onSubmit, editingPaquete }) {
                                         children: "Tarifa por Temporada"
                                     }, void 0, false, {
                                         fileName: "[project]/components/modules/paquetes/paquete-modal.tsx",
-                                        lineNumber: 200,
+                                        lineNumber: 231,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("select", {
@@ -9876,18 +10192,18 @@ function PaqueteModal({ isOpen, onClose, onSubmit, editingPaquete }) {
                                                 children: t
                                             }, t, false, {
                                                 fileName: "[project]/components/modules/paquetes/paquete-modal.tsx",
-                                                lineNumber: 207,
+                                                lineNumber: 238,
                                                 columnNumber: 17
                                             }, this))
                                     }, void 0, false, {
                                         fileName: "[project]/components/modules/paquetes/paquete-modal.tsx",
-                                        lineNumber: 201,
+                                        lineNumber: 232,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/modules/paquetes/paquete-modal.tsx",
-                                lineNumber: 199,
+                                lineNumber: 230,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -9897,7 +10213,7 @@ function PaqueteModal({ isOpen, onClose, onSubmit, editingPaquete }) {
                                         children: "Servicios Incluidos"
                                     }, void 0, false, {
                                         fileName: "[project]/components/modules/paquetes/paquete-modal.tsx",
-                                        lineNumber: 216,
+                                        lineNumber: 247,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("textarea", {
@@ -9910,13 +10226,13 @@ function PaqueteModal({ isOpen, onClose, onSubmit, editingPaquete }) {
                                             })
                                     }, void 0, false, {
                                         fileName: "[project]/components/modules/paquetes/paquete-modal.tsx",
-                                        lineNumber: 217,
+                                        lineNumber: 248,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/modules/paquetes/paquete-modal.tsx",
-                                lineNumber: 215,
+                                lineNumber: 246,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -9926,7 +10242,7 @@ function PaqueteModal({ isOpen, onClose, onSubmit, editingPaquete }) {
                                         children: "Políticas de Viaje / Cancelación"
                                     }, void 0, false, {
                                         fileName: "[project]/components/modules/paquetes/paquete-modal.tsx",
-                                        lineNumber: 227,
+                                        lineNumber: 258,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("textarea", {
@@ -9939,13 +10255,13 @@ function PaqueteModal({ isOpen, onClose, onSubmit, editingPaquete }) {
                                             })
                                     }, void 0, false, {
                                         fileName: "[project]/components/modules/paquetes/paquete-modal.tsx",
-                                        lineNumber: 228,
+                                        lineNumber: 259,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/modules/paquetes/paquete-modal.tsx",
-                                lineNumber: 226,
+                                lineNumber: 257,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -9955,7 +10271,7 @@ function PaqueteModal({ isOpen, onClose, onSubmit, editingPaquete }) {
                                         children: "Notas Internas"
                                     }, void 0, false, {
                                         fileName: "[project]/components/modules/paquetes/paquete-modal.tsx",
-                                        lineNumber: 238,
+                                        lineNumber: 269,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("textarea", {
@@ -9968,13 +10284,13 @@ function PaqueteModal({ isOpen, onClose, onSubmit, editingPaquete }) {
                                             })
                                     }, void 0, false, {
                                         fileName: "[project]/components/modules/paquetes/paquete-modal.tsx",
-                                        lineNumber: 239,
+                                        lineNumber: 270,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/modules/paquetes/paquete-modal.tsx",
-                                lineNumber: 237,
+                                lineNumber: 268,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -9988,7 +10304,7 @@ function PaqueteModal({ isOpen, onClose, onSubmit, editingPaquete }) {
                                         children: "Cancelar"
                                     }, void 0, false, {
                                         fileName: "[project]/components/modules/paquetes/paquete-modal.tsx",
-                                        lineNumber: 249,
+                                        lineNumber: 280,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
@@ -9997,31 +10313,31 @@ function PaqueteModal({ isOpen, onClose, onSubmit, editingPaquete }) {
                                         children: editingPaquete ? "Guardar Cambios" : "Crear Paquete"
                                     }, void 0, false, {
                                         fileName: "[project]/components/modules/paquetes/paquete-modal.tsx",
-                                        lineNumber: 257,
+                                        lineNumber: 288,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/modules/paquetes/paquete-modal.tsx",
-                                lineNumber: 248,
+                                lineNumber: 279,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/modules/paquetes/paquete-modal.tsx",
-                        lineNumber: 98,
+                        lineNumber: 129,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/modules/paquetes/paquete-modal.tsx",
-                lineNumber: 86,
+                lineNumber: 117,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/modules/paquetes/paquete-modal.tsx",
-        lineNumber: 83,
+        lineNumber: 114,
         columnNumber: 5
     }, this);
 }
@@ -10380,37 +10696,37 @@ function Dashboard() {
             case "sucursales":
                 return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$modules$2f$sucursales$2f$sucursales$2d$module$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["SucursalesModule"], {}, void 0, false, {
                     fileName: "[project]/components/dashboard/dashboard.tsx",
-                    lineNumber: 30,
+                    lineNumber: 31,
                     columnNumber: 16
                 }, this);
             case "vendedores":
                 return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$modules$2f$vendedores$2f$vendedores$2d$module$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["VendedoresModule"], {}, void 0, false, {
                     fileName: "[project]/components/dashboard/dashboard.tsx",
-                    lineNumber: 32,
+                    lineNumber: 33,
                     columnNumber: 16
                 }, this);
             case "clientes":
                 return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$modules$2f$clientes$2f$clientes$2d$module$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["ClientesModule"], {}, void 0, false, {
                     fileName: "[project]/components/dashboard/dashboard.tsx",
-                    lineNumber: 34,
+                    lineNumber: 35,
                     columnNumber: 16
                 }, this);
             case "paquetes":
                 return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$modules$2f$paquetes$2f$paquetes$2d$module$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["PaquetesModule"], {}, void 0, false, {
                     fileName: "[project]/components/dashboard/dashboard.tsx",
-                    lineNumber: 36,
+                    lineNumber: 37,
                     columnNumber: 16
                 }, this);
             case "leads":
                 return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$modules$2f$leads$2f$leads$2d$module$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["LeadsModule"], {}, void 0, false, {
                     fileName: "[project]/components/dashboard/dashboard.tsx",
-                    lineNumber: 38,
+                    lineNumber: 39,
                     columnNumber: 16
                 }, this);
             default:
                 return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$dashboard$2f$dashboard$2d$home$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["DashboardHome"], {}, void 0, false, {
                     fileName: "[project]/components/dashboard/dashboard.tsx",
-                    lineNumber: 40,
+                    lineNumber: 41,
                     columnNumber: 16
                 }, this);
         }
@@ -10424,7 +10740,7 @@ function Dashboard() {
                 onModuleChange: setActiveModule
             }, void 0, false, {
                 fileName: "[project]/components/dashboard/dashboard.tsx",
-                lineNumber: 46,
+                lineNumber: 47,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -10435,7 +10751,7 @@ function Dashboard() {
                         onSidebarToggle: ()=>setSidebarOpen(!sidebarOpen)
                     }, void 0, false, {
                         fileName: "[project]/components/dashboard/dashboard.tsx",
-                        lineNumber: 49,
+                        lineNumber: 50,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("main", {
@@ -10445,29 +10761,29 @@ function Dashboard() {
                             children: renderModule()
                         }, void 0, false, {
                             fileName: "[project]/components/dashboard/dashboard.tsx",
-                            lineNumber: 52,
+                            lineNumber: 53,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/components/dashboard/dashboard.tsx",
-                        lineNumber: 51,
+                        lineNumber: 52,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/dashboard/dashboard.tsx",
-                lineNumber: 48,
+                lineNumber: 49,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$notifications$2f$notification$2d$center$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["NotificationCenter"], {}, void 0, false, {
                 fileName: "[project]/components/dashboard/dashboard.tsx",
-                lineNumber: 56,
+                lineNumber: 57,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/dashboard/dashboard.tsx",
-        lineNumber: 45,
+        lineNumber: 46,
         columnNumber: 5
     }, this);
 }

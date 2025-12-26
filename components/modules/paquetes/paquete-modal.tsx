@@ -19,6 +19,8 @@ export function PaqueteModal({ isOpen, onClose, onSubmit, editingPaquete }: Paqu
     fecha_inicio: "",
     fecha_fin: "",
     cupos: 1,
+    stockVuelos: 0,
+    stockHospedaje: 0,
     precioAdulto: 0,
     precioMenor: 0,
     moneda: "USD",
@@ -30,10 +32,45 @@ export function PaqueteModal({ isOpen, onClose, onSubmit, editingPaquete }: Paqu
   })
 
   useEffect(() => {
-    if (editingPaquete) {
-      setFormData(editingPaquete)
+    if (editingPaquete && isOpen) {
+      setFormData({
+        nombre: editingPaquete.nombre || "",
+        destino: editingPaquete.destino || "",
+        fecha_inicio: editingPaquete.fecha_inicio || "",
+        fecha_fin: editingPaquete.fecha_fin || "",
+        cupos: editingPaquete.cupos || 1,
+        stockVuelos: editingPaquete.stock_vuelos || 0,
+        stockHospedaje: editingPaquete.stock_hospedaje || 0,
+        precioAdulto: editingPaquete.precio_adulto || 0,
+        precioMenor: editingPaquete.precio_menor || 0,
+        moneda: editingPaquete.moneda || "USD",
+        tarifa: editingPaquete.tarifa || "Media",
+        servicios: editingPaquete.servicios || "",
+        politicas: editingPaquete.politicas || "",
+        imagen: editingPaquete.imagen || "/paquete-turistico.jpg",
+        notas: editingPaquete.notas || "",
+      })
+    } else if (!isOpen) {
+      // Reset form cuando se cierra el modal
+      setFormData({
+        nombre: "",
+        destino: "",
+        fecha_inicio: "",
+        fecha_fin: "",
+        cupos: 1,
+        stockVuelos: 0,
+        stockHospedaje: 0,
+        precioAdulto: 0,
+        precioMenor: 0,
+        moneda: "USD",
+        tarifa: "Media",
+        servicios: "",
+        politicas: "",
+        imagen: "/paquete-turistico.jpg",
+        notas: "",
+      })
     }
-  }, [editingPaquete])
+  }, [editingPaquete, isOpen])
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
@@ -46,6 +83,8 @@ export function PaqueteModal({ isOpen, onClose, onSubmit, editingPaquete }: Paqu
       fecha_fin: formData.fecha_fin || null,
       cupos: formData.cupos,
       cupos_disponibles: formData.cupos, // Inicialmente igual a cupos
+      stock_vuelos: formData.stockVuelos,
+      stock_hospedaje: formData.stockHospedaje,
       precio_adulto: formData.precioAdulto,
       precio_menor: formData.precioMenor,
       moneda: formData.moneda,
@@ -63,6 +102,8 @@ export function PaqueteModal({ isOpen, onClose, onSubmit, editingPaquete }: Paqu
       fecha_inicio: "",
       fecha_fin: "",
       cupos: 1,
+      stockVuelos: 0,
+      stockHospedaje: 0,
       precioAdulto: 0,
       precioMenor: 0,
       moneda: "USD",
@@ -144,8 +185,8 @@ export function PaqueteModal({ isOpen, onClose, onSubmit, editingPaquete }: Paqu
             </div>
           </div>
 
-          {/* Cupos y Precios */}
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
+          {/* Cupos y Stock */}
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
             <div>
               <label className="block text-sm font-medium text-foreground mb-2">Stock/Cupos</label>
               <input
@@ -157,6 +198,32 @@ export function PaqueteModal({ isOpen, onClose, onSubmit, editingPaquete }: Paqu
                 onChange={(e) => setFormData({ ...formData, cupos: Number.parseInt(e.target.value) })}
               />
             </div>
+            <div>
+              <label className="block text-sm font-medium text-foreground mb-2">Stock Vuelos</label>
+              <input
+                type="number"
+                required
+                min="0"
+                className="w-full px-3 py-2 border border-border rounded-lg bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-blue-500"
+                value={formData.stockVuelos}
+                onChange={(e) => setFormData({ ...formData, stockVuelos: Number.parseInt(e.target.value) })}
+              />
+            </div>
+            <div>
+              <label className="block text-sm font-medium text-foreground mb-2">Stock Hospedaje</label>
+              <input
+                type="number"
+                required
+                min="0"
+                className="w-full px-3 py-2 border border-border rounded-lg bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-blue-500"
+                value={formData.stockHospedaje}
+                onChange={(e) => setFormData({ ...formData, stockHospedaje: Number.parseInt(e.target.value) })}
+              />
+            </div>
+          </div>
+
+          {/* Precios */}
+          <div className="grid grid-cols-2 gap-4">
             <div>
               <label className="block text-sm font-medium text-foreground mb-2">Precio Adulto</label>
               <input

@@ -6,6 +6,7 @@ import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
 import { X } from "lucide-react"
 import type { Sucursal } from "@/types"
+import { toast } from "sonner"
 
 interface SucursalModalProps {
   isOpen: boolean
@@ -56,7 +57,7 @@ export function SucursalModal({ isOpen, onClose, onSubmit, sucursal }: SucursalM
     e.preventDefault()
 
     if (!formData.nombre.trim() || !formData.codigo.trim()) {
-      alert("Por favor completa los campos obligatorios (Nombre y Código)")
+      toast.error("Por favor completa los campos obligatorios (Nombre y Código)")
       return
     }
 

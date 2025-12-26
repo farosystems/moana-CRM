@@ -2,7 +2,7 @@
 
 import { cn } from "@/lib/utils"
 import { Button } from "@/components/ui/button"
-import { BarChart3, Users, MapPin, TrendingUp, LogOut, Settings, Building2 } from "lucide-react"
+import { BarChart3, Users, MapPin, TrendingUp, LogOut, Settings, Building2, Hotel, Bed } from "lucide-react"
 import Image from "next/image"
 
 interface SidebarProps {
@@ -48,6 +48,24 @@ export function Sidebar({ isOpen, activeModule, onModuleChange }: SidebarProps) 
       label: "Leads",
       icon: TrendingUp,
       color: "text-orange-500",
+    },
+    {
+      id: "posadas",
+      label: "Posadas",
+      icon: Hotel,
+      color: "text-cyan-500",
+    },
+    {
+      id: "habitaciones",
+      label: "Habitaciones",
+      icon: Bed,
+      color: "text-pink-500",
+    },
+    {
+      id: "configuracion",
+      label: "Configuración",
+      icon: Settings,
+      color: "text-gray-500",
     },
   ]
 

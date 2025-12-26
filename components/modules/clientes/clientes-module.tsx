@@ -9,8 +9,9 @@ import { ClienteModal } from "./cliente-modal"
 import { ImportClientesModal } from "./import-clientes-modal"
 import { ClienteDetailModal } from "./cliente-detail-modal"
 import { Plus, Search, Upload } from "lucide-react"
-import { clientesQueries } from "@/lib/supabase/queries"
+import { clientesQueries, vendedoresQueries } from "@/lib/supabase/queries"
 import type { Cliente } from "@/types"
+import { toast } from "sonner"
 
 export function ClientesModule() {
   const [isModalOpen, setIsModalOpen] = useState(false)
@@ -18,15 +19,27 @@ export function ClientesModule() {
   const [isDetailOpen, setIsDetailOpen] = useState(false)
   const [isDeleteDialogOpen, setIsDeleteDialogOpen] = useState(false)
   const [clienteToDelete, setClienteToDelete] = useState<string | null>(null)
+  const [editingCliente, setEditingCliente] = useState<Cliente | null>(null)
   const [selectedClienteId, setSelectedClienteId] = useState<string | null>(null)
   const [searchTerm, setSearchTerm] = useState("")
   const [clientes, setClientes] = useState<Cliente[]>([])
+  const [vendedores, setVendedores] = useState<any[]>([])
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState<string | null>(null)
 
   useEffect(() => {
     fetchClientes()
+    fetchVendedores()
   }, [])
+
+  const fetchVendedores = async () => {
+    try {
+      const data = await vendedoresQueries.getAll()
+      setVendedores(data)
+    } catch (err) {
+      console.error("Error al cargar vendedores:", err)
+    }
+  }
 
   const fetchClientes = async () => {
     try {
@@ -44,13 +57,31 @@ export function ClientesModule() {
 
   const handleAddCliente = async (data: any) => {
     try {
-      const newCliente = await clientesQueries.create(data)
-      setClientes([...clientes, newCliente])
+      if (editingCliente) {
+        // Actualizar cliente existente
+        await clientesQueries.update(editingCliente.id, data)
+        await fetchClientes()
+        setEditingCliente(null)
+      } else {
+        // Crear nuevo cliente
+        const newCliente = await clientesQueries.create(data)
+        setClientes([...clientes, newCliente])
+      }
       setIsModalOpen(false)
     } catch (err) {
-      console.error("Error al crear cliente:", err)
-      alert("Error al crear el cliente. Por favor, intenta de nuevo.")
+      console.error("Error al guardar cliente:", err)
+      toast.error("Error al guardar el cliente. Por favor, intenta de nuevo.")
     }
+  }
+
+  const handleEditCliente = (cliente: Cliente) => {
+    setEditingCliente(cliente)
+    setIsModalOpen(true)
+  }
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false)
+    setEditingCliente(null)
   }
 
   const handleImportClientes = async (importedClientes: any[]) => {
@@ -61,7 +92,7 @@ export function ClientesModule() {
       setIsImportOpen(false)
     } catch (err) {
       console.error("Error al importar clientes:", err)
-      alert("Error al importar clientes. Por favor, intenta de nuevo.")
+      toast.error("Error al importar clientes. Por favor, intenta de nuevo.")
     }
   }
 
@@ -79,7 +110,7 @@ export function ClientesModule() {
       setClienteToDelete(null)
     } catch (err) {
       console.error("Error al eliminar cliente:", err)
-      alert("Error al eliminar el cliente. Por favor, intenta de nuevo.")
+      toast.error("Error al eliminar el cliente. Por favor, intenta de nuevo.")
     }
   }
 
@@ -168,10 +199,10 @@ export function ClientesModule() {
           </div>
         </div>
 
-        <ClientesTable clientes={filteredClientes} onDelete={handleDeleteCliente} onViewDetail={handleViewDetail} />
+        <ClientesTable clientes={filteredClientes} onEdit={handleEditCliente} onDelete={handleDeleteCliente} onViewDetail={handleViewDetail} />
       </Card>
 
-      <ClienteModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} onSubmit={handleAddCliente} />
+      <ClienteModal isOpen={isModalOpen} onClose={handleCloseModal} onSubmit={handleAddCliente} cliente={editingCliente} vendedores={vendedores} />
       <ImportClientesModal
         isOpen={isImportOpen}
         onClose={() => setIsImportOpen(false)}

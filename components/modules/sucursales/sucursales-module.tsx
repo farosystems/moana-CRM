@@ -9,6 +9,7 @@ import { SucursalModal } from "./sucursal-modal"
 import { Plus, Search } from "lucide-react"
 import { sucursalesQueries } from "@/lib/supabase/queries"
 import type { Sucursal } from "@/types"
+import { toast } from "sonner"
 
 export function SucursalesModule() {
   const [isModalOpen, setIsModalOpen] = useState(false)
@@ -51,7 +52,7 @@ export function SucursalesModule() {
       setEditingSucursal(null)
     } catch (err) {
       console.error("Error al guardar sucursal:", err)
-      alert("No se pudo guardar la sucursal")
+      toast.error("No se pudo guardar la sucursal")
     }
   }
 
@@ -74,7 +75,7 @@ export function SucursalesModule() {
       setSucursalToDelete(null)
     } catch (err) {
       console.error("Error al eliminar sucursal:", err)
-      alert("No se pudo eliminar la sucursal")
+      toast.error("No se pudo eliminar la sucursal")
     }
   }
 

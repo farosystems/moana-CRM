@@ -1,7 +1,7 @@
 "use client"
 
 import type React from "react"
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
 import { X } from "lucide-react"
 
@@ -9,9 +9,11 @@ interface ClienteModalProps {
   isOpen: boolean
   onClose: () => void
   onSubmit: (data: any) => void
+  cliente?: any
+  vendedores?: any[]
 }
 
-export function ClienteModal({ isOpen, onClose, onSubmit }: ClienteModalProps) {
+export function ClienteModal({ isOpen, onClose, onSubmit, cliente, vendedores = [] }: ClienteModalProps) {
   const [activeTab, setActiveTab] = useState("basico")
   const [formData, setFormData] = useState({
     nombre: "",
@@ -21,21 +23,71 @@ export function ClienteModal({ isOpen, onClose, onSubmit }: ClienteModalProps) {
     telefono: "",
     whatsapp: "",
     tipoCliente: "empresa",
+    vendedorId: "",
     // Documentación
     documentoId: "",
     tipoDocumento: "pasaporte",
     paisDocumento: "",
     // Preferencias de viaje
     destinosPreferidos: "",
-    tipoViajes: [],
+    tipoViajes: [] as string[],
     presupuestoPromedio: "",
     frecuenciaViajes: "ocasional",
     notas: "",
   })
 
+  // Cargar datos del cliente al editar
+  useEffect(() => {
+    if (cliente && isOpen) {
+      setFormData({
+        nombre: cliente.nombre || "",
+        email: cliente.email || "",
+        ciudad: cliente.ciudad || "",
+        pais: cliente.pais || "",
+        telefono: cliente.telefono || "",
+        whatsapp: cliente.whatsapp || "",
+        tipoCliente: cliente.tipo_cliente || "empresa",
+        vendedorId: cliente.vendedor_id || "",
+        documentoId: cliente.documento_id || "",
+        tipoDocumento: cliente.tipo_documento || "pasaporte",
+        paisDocumento: "",
+        destinosPreferidos: cliente.destinos_preferidos || "",
+        tipoViajes: cliente.tipo_viajes || [],
+        presupuestoPromedio: cliente.presupuesto_promedio || "",
+        frecuenciaViajes: cliente.frecuencia_viajes || "ocasional",
+        notas: "",
+      })
+    } else if (!isOpen) {
+      // Reset form cuando se cierra el modal
+      resetForm()
+    }
+  }, [cliente, isOpen])
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
-    onSubmit(formData)
+
+    // Mapear campos de camelCase a snake_case para la base de datos
+    const dataToSubmit: any = {
+      nombre: formData.nombre,
+      email: formData.email,
+      telefono: formData.telefono,
+      tipo_cliente: formData.tipoCliente,
+    }
+
+    // Campos opcionales
+    if (formData.ciudad) dataToSubmit.ciudad = formData.ciudad
+    if (formData.pais) dataToSubmit.pais = formData.pais
+    if (formData.whatsapp) dataToSubmit.whatsapp = formData.whatsapp
+    if (formData.vendedorId) dataToSubmit.vendedor_id = formData.vendedorId
+    if (formData.documentoId) dataToSubmit.documento_id = formData.documentoId
+    if (formData.tipoDocumento) dataToSubmit.tipo_documento = formData.tipoDocumento
+    if (formData.destinosPreferidos) dataToSubmit.destinos_preferidos = formData.destinosPreferidos
+    if (formData.tipoViajes.length > 0) dataToSubmit.tipo_viajes = formData.tipoViajes
+    if (formData.presupuestoPromedio) dataToSubmit.presupuesto_promedio = formData.presupuestoPromedio
+    if (formData.frecuenciaViajes) dataToSubmit.frecuencia_viajes = formData.frecuenciaViajes
+    // Nota: el campo 'notas' no existe en la tabla clientes
+
+    onSubmit(dataToSubmit)
     resetForm()
   }
 
@@ -48,6 +100,7 @@ export function ClienteModal({ isOpen, onClose, onSubmit }: ClienteModalProps) {
       telefono: "",
       whatsapp: "",
       tipoCliente: "empresa",
+      vendedorId: "",
       documentoId: "",
       tipoDocumento: "pasaporte",
       paisDocumento: "",
@@ -77,7 +130,7 @@ export function ClienteModal({ isOpen, onClose, onSubmit }: ClienteModalProps) {
 
       <div className="relative bg-card border border-border rounded-t-2xl sm:rounded-lg w-full sm:w-[600px] max-h-[90vh] overflow-y-auto shadow-lg">
         <div className="sticky top-0 flex items-center justify-between p-6 border-b border-border bg-card rounded-t-2xl sm:rounded-t-lg">
-          <h2 className="text-xl font-bold text-foreground">Nuevo Cliente</h2>
+          <h2 className="text-xl font-bold text-foreground">{cliente ? "Editar Cliente" : "Nuevo Cliente"}</h2>
           <Button variant="ghost" size="icon" onClick={onClose} className="text-foreground hover:bg-muted">
             <X className="w-5 h-5" />
           </Button>
@@ -130,6 +183,22 @@ export function ClienteModal({ isOpen, onClose, onSubmit }: ClienteModalProps) {
                 >
                   <option value="empresa">Empresa</option>
                   <option value="persona">Persona</option>
+                </select>
+              </div>
+
+              <div>
+                <label className="block text-sm font-medium text-foreground mb-2">Vendedor Asignado</label>
+                <select
+                  className="w-full px-3 py-2 border border-border rounded-lg bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary"
+                  value={formData.vendedorId}
+                  onChange={(e) => setFormData({ ...formData, vendedorId: e.target.value })}
+                >
+                  <option value="">Seleccionar vendedor</option>
+                  {vendedores.map((vendedor) => (
+                    <option key={vendedor.id} value={vendedor.id}>
+                      {vendedor.nombre} {vendedor.apellido}
+                    </option>
+                  ))}
                 </select>
               </div>
 

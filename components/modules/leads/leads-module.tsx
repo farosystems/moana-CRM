@@ -10,8 +10,9 @@ import { ImportLeadsModal } from "./import-leads-modal"
 import { AssignmentRulesModal } from "./assignment-rules-modal"
 import { ConvertLeadModal } from "../clientes/convert-lead-modal"
 import { Plus, Search, Upload, Settings } from "lucide-react"
-import { leadsQueries, clientesQueries, paquetesQueries, vendedoresQueries } from "@/lib/supabase/queries"
+import { leadsQueries, clientesQueries, paquetesQueries, vendedoresQueries, acompanantesQueries, tiposPaqueteQueries } from "@/lib/supabase/queries"
 import type { Lead, Cliente, Paquete } from "@/types"
+import { toast } from "sonner"
 
 export function LeadsModule() {
   const [isModalOpen, setIsModalOpen] = useState(false)
@@ -19,6 +20,7 @@ export function LeadsModule() {
   const [isRulesOpen, setIsRulesOpen] = useState(false)
   const [isConvertModalOpen, setIsConvertModalOpen] = useState(false)
   const [selectedLeadForConversion, setSelectedLeadForConversion] = useState<Lead | null>(null)
+  const [editingLead, setEditingLead] = useState<Lead | null>(null)
   const [selectedLeadHistory, setSelectedLeadHistory] = useState<string | null>(null)
   const [leadHistorial, setLeadHistorial] = useState<any[]>([])
   const [searchTerm, setSearchTerm] = useState("")
@@ -59,13 +61,83 @@ export function LeadsModule() {
 
   const handleAddLead = async (data: any) => {
     try {
-      const newLead = await leadsQueries.create(data)
-      setLeads([...leads, newLead])
+      // Extraer acompañantes del data
+      const { acompanantes, ...leadData } = data
+
+      if (editingLead) {
+        // Actualizar lead existente
+        await leadsQueries.update(editingLead.id, leadData)
+
+        // Guardar acompañantes (crear, actualizar o eliminar)
+        if (acompanantes) {
+          const acompanantesOriginales = await acompanantesQueries.getByLeadId(editingLead.id)
+          await acompanantesQueries.saveAll(editingLead.id, acompanantes, acompanantesOriginales)
+        }
+
+        // Manejar cambio de paquete o tipo de paquete (incrementar stock del anterior, decrementar del nuevo)
+        if (leadData.paquete_sugerido_id && leadData.tipo_paquete_seleccionado) {
+          const cambioPackage = editingLead.paquete_sugerido_id !== leadData.paquete_sugerido_id
+          const cambioTipo = editingLead.tipo_paquete_seleccionado !== leadData.tipo_paquete_seleccionado
+
+          if (cambioPackage || cambioTipo) {
+            // Incrementar stock del paquete/tipo anterior
+            if (editingLead.paquete_sugerido_id && editingLead.tipo_paquete_seleccionado) {
+              try {
+                const tipoAnterior = await tiposPaqueteQueries.getById(editingLead.tipo_paquete_seleccionado)
+                await paquetesQueries.incrementarStock(editingLead.paquete_sugerido_id, tipoAnterior.nombre)
+              } catch (err) {
+                console.error("Error al incrementar stock anterior:", err)
+              }
+            }
+
+            // Decrementar stock del paquete/tipo nuevo
+            const tipoNuevo = await tiposPaqueteQueries.getById(leadData.tipo_paquete_seleccionado)
+            await paquetesQueries.decrementarStock(leadData.paquete_sugerido_id, tipoNuevo.nombre)
+          }
+        }
+
+        await fetchData()
+        setEditingLead(null)
+        toast.success("Lead actualizado correctamente")
+      } else {
+        // Crear nuevo lead
+        const newLead = await leadsQueries.create(leadData)
+
+        // Decrementar stock del paquete si se seleccionó uno
+        if (leadData.paquete_sugerido_id && leadData.tipo_paquete_seleccionado) {
+          try {
+            const tipoPaquete = await tiposPaqueteQueries.getById(leadData.tipo_paquete_seleccionado)
+            await paquetesQueries.decrementarStock(leadData.paquete_sugerido_id, tipoPaquete.nombre)
+            toast.success("Stock actualizado correctamente")
+          } catch (err) {
+            console.error("Error al decrementar stock:", err)
+            toast.warning("Lead creado pero hubo un error al actualizar el stock")
+          }
+        }
+
+        // Guardar acompañantes del nuevo lead
+        if (acompanantes && acompanantes.length > 0) {
+          await acompanantesQueries.saveAll(newLead.id, acompanantes, [])
+        }
+
+        setLeads([...leads, newLead])
+        toast.success("Lead creado correctamente")
+      }
       setIsModalOpen(false)
     } catch (err) {
-      console.error("Error al crear lead:", err)
-      alert("No se pudo crear el lead")
+      console.error("Error al guardar lead:", err)
+      toast.error("No se pudo guardar el lead")
     }
+  }
+
+  const handleEditLead = (lead: Lead) => {
+    setEditingLead(lead)
+    setIsModalOpen(true)
+  }
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false)
+    setEditingLead(null)
   }
 
   const handleImportLeads = async (importedLeads: any[]) => {
@@ -76,7 +148,7 @@ export function LeadsModule() {
       setIsImportOpen(false)
     } catch (err) {
       console.error("Error al importar leads:", err)
-      alert("No se pudieron importar los leads")
+      toast.error("No se pudieron importar los leads")
     }
   }
 
@@ -86,7 +158,7 @@ export function LeadsModule() {
       setLeads(leads.filter((l) => l.id !== id))
     } catch (err) {
       console.error("Error al eliminar lead:", err)
-      alert("No se pudo eliminar el lead")
+      toast.error("No se pudo eliminar el lead")
     }
   }
 
@@ -96,7 +168,7 @@ export function LeadsModule() {
       setLeads(leads.map((l) => (l.id === id ? updated : l)))
     } catch (err) {
       console.error("Error al actualizar lead:", err)
-      alert("No se pudo actualizar el lead")
+      toast.error("No se pudo actualizar el lead")
     }
   }
 
@@ -107,7 +179,7 @@ export function LeadsModule() {
       setSelectedLeadHistory(leadId)
     } catch (err) {
       console.error("Error al cargar historial:", err)
-      alert("No se pudo cargar el historial")
+      toast.error("No se pudo cargar el historial")
     }
   }
 
@@ -141,7 +213,7 @@ export function LeadsModule() {
       setSelectedLeadForConversion(null)
     } catch (err) {
       console.error("Error al convertir lead:", err)
-      alert("No se pudo convertir el lead")
+      toast.error("No se pudo convertir el lead")
     }
   }
 
@@ -160,6 +232,13 @@ export function LeadsModule() {
         return "bg-amber-100 dark:bg-amber-900/30 text-amber-700 dark:text-amber-300"
       case "Cotizado":
         return "bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300"
+      case "Cerrado – Pendiente Administración":
+        return "bg-orange-100 dark:bg-orange-900/30 text-orange-700 dark:text-orange-300"
+      case "Finalizado":
+        return "bg-emerald-100 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-300"
+      case "Perdido":
+        return "bg-red-100 dark:bg-red-900/30 text-red-700 dark:text-red-300"
+      // Mantener compatibilidad con estados antiguos
       case "Cerrado ganado":
         return "bg-emerald-100 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-300"
       case "Cerrado perdido":
@@ -264,6 +343,7 @@ export function LeadsModule() {
         <LeadsTable
           leads={filteredLeads}
           getEstadoColor={getEstadoColor}
+          onEdit={handleEditLead}
           onDelete={handleDeleteLead}
           onUpdate={handleUpdateLead}
           onViewHistory={handleViewHistory}
@@ -273,8 +353,9 @@ export function LeadsModule() {
 
       <LeadModal
         isOpen={isModalOpen}
-        onClose={() => setIsModalOpen(false)}
+        onClose={handleCloseModal}
         onSubmit={handleAddLead}
+        lead={editingLead}
         paquetesDisponibles={paquetesDisponibles}
         vendedores={vendedores}
       />

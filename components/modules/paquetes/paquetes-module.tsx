@@ -8,6 +8,7 @@ import { PaquetesTable } from "./paquetes-table"
 import { PaqueteModal } from "./paquete-modal"
 import { paquetesQueries } from "@/lib/supabase/queries"
 import type { Paquete } from "@/types"
+import { toast } from "sonner"
 
 export function PaquetesModule() {
   const [isModalOpen, setIsModalOpen] = useState(false)
@@ -52,7 +53,7 @@ export function PaquetesModule() {
       setIsModalOpen(false)
     } catch (err) {
       console.error("Error al guardar paquete:", err)
-      alert("Error al guardar el paquete. Por favor, intenta de nuevo.")
+      toast.error("Error al guardar el paquete. Por favor, intenta de nuevo.")
     }
   }
 
@@ -75,7 +76,7 @@ export function PaquetesModule() {
       setPaqueteToDelete(null)
     } catch (err) {
       console.error("Error al eliminar paquete:", err)
-      alert("Error al eliminar el paquete. Por favor, intenta de nuevo.")
+      toast.error("Error al eliminar el paquete. Por favor, intenta de nuevo.")
     }
   }
 

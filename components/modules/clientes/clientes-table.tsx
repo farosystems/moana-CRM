@@ -2,6 +2,9 @@
 
 import { MessageCircle, Mail, Edit2, Trash2, Eye } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import { useEmail } from "@/hooks/use-email"
+import { useState } from "react"
+import { toast } from "sonner"
 
 interface Cliente {
   id: string
@@ -11,28 +14,57 @@ interface Cliente {
   pais: string
   telefono: string
   whatsapp?: string
-  leads: number
+  vendedorAsignado?: string
   fechaConversion?: string
 }
 
 interface ClientesTableProps {
   clientes: Cliente[]
+  onEdit?: (cliente: Cliente) => void
   onDelete?: (id: string) => void
   onViewDetail?: (id: string) => void
 }
 
-export function ClientesTable({ clientes, onDelete, onViewDetail }: ClientesTableProps) {
+export function ClientesTable({ clientes, onEdit, onDelete, onViewDetail }: ClientesTableProps) {
+  const { sendEmail } = useEmail()
+  const [sendingEmailId, setSendingEmailId] = useState<string | null>(null)
+
   const handleWhatsApp = (cliente: Cliente) => {
     const message = encodeURIComponent(`Hola ${cliente.nombre}, te contactamos respecto a tus servicios turísticos.`)
     window.open(`https://wa.me/${cliente.whatsapp?.replace(/\D/g, "")}?text=${message}`)
   }
 
-  const handleEmail = (cliente: Cliente) => {
-    const subject = encodeURIComponent(`Consulta de servicios turísticos - ${cliente.nombre}`)
-    const body = encodeURIComponent(
-      `Hola ${cliente.nombre},\n\nEste es un seguimiento de nuestros servicios turísticos.`,
-    )
-    window.location.href = `mailto:${cliente.email}?subject=${subject}&body=${body}`
+  const handleEmail = async (cliente: Cliente) => {
+    if (!cliente.email) return
+
+    setSendingEmailId(cliente.id)
+
+    const emailHtml = `
+      <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
+        <h2 style="color: #9333ea;">Hola ${cliente.nombre},</h2>
+        <p>Esperamos que te encuentres muy bien.</p>
+        <p>Te contactamos para darte seguimiento sobre nuestros servicios turísticos y asegurarnos de que tengas la mejor experiencia con nosotros.</p>
+        <p>Si tienes alguna pregunta o necesitas información adicional, no dudes en contactarnos.</p>
+        <br>
+        <p>Saludos cordiales,</p>
+        <p><strong>Equipo Moana CRM</strong></p>
+      </div>
+    `
+
+    const result = await sendEmail({
+      to: cliente.email,
+      subject: `Seguimiento de servicios turísticos - ${cliente.nombre}`,
+      html: emailHtml,
+      text: `Hola ${cliente.nombre},\n\nEsperamos que te encuentres muy bien.\n\nTe contactamos para darte seguimiento sobre nuestros servicios turísticos y asegurarnos de que tengas la mejor experiencia con nosotros.\n\nSaludos,\nEquipo Moana CRM`,
+    })
+
+    setSendingEmailId(null)
+
+    if (result.success) {
+      toast.success("Email enviado exitosamente")
+    } else {
+      toast.error(`Error al enviar email: ${result.error}`)
+    }
   }
 
   return (
@@ -44,7 +76,7 @@ export function ClientesTable({ clientes, onDelete, onViewDetail }: ClientesTabl
             <th className="text-left py-3 px-4 font-semibold text-foreground hidden sm:table-cell">Email</th>
             <th className="text-left py-3 px-4 font-semibold text-foreground hidden md:table-cell">Ciudad</th>
             <th className="text-left py-3 px-4 font-semibold text-foreground hidden lg:table-cell">País</th>
-            <th className="text-center py-3 px-4 font-semibold text-foreground">Leads</th>
+            <th className="text-left py-3 px-4 font-semibold text-foreground hidden xl:table-cell">Vendedor</th>
             <th className="text-center py-3 px-4 font-semibold text-foreground">Acciones</th>
           </tr>
         </thead>
@@ -55,9 +87,7 @@ export function ClientesTable({ clientes, onDelete, onViewDetail }: ClientesTabl
               <td className="py-3 px-4 text-muted-foreground hidden sm:table-cell text-xs">{cliente.email}</td>
               <td className="py-3 px-4 text-muted-foreground hidden md:table-cell text-xs">{cliente.ciudad}</td>
               <td className="py-3 px-4 text-muted-foreground hidden lg:table-cell text-xs">{cliente.pais}</td>
-              <td className="py-3 px-4 text-center font-semibold text-purple-600 dark:text-purple-400">
-                {cliente.leads}
-              </td>
+              <td className="py-3 px-4 text-muted-foreground hidden xl:table-cell text-xs">{cliente.vendedorAsignado || '-'}</td>
               <td className="py-3 px-4">
                 <div className="flex gap-1 justify-center flex-wrap">
                   <Button
@@ -74,9 +104,14 @@ export function ClientesTable({ clientes, onDelete, onViewDetail }: ClientesTabl
                     variant="ghost"
                     onClick={() => handleEmail(cliente)}
                     title="Email"
-                    className="h-8 w-8 p-0 text-blue-600 hover:bg-blue-100 dark:hover:bg-blue-900/20"
+                    disabled={sendingEmailId === cliente.id}
+                    className="h-8 w-8 p-0 text-blue-600 hover:bg-blue-100 dark:hover:bg-blue-900/20 disabled:opacity-50"
                   >
-                    <Mail className="w-4 h-4" />
+                    {sendingEmailId === cliente.id ? (
+                      <div className="w-4 h-4 border-2 border-blue-600 border-t-transparent rounded-full animate-spin" />
+                    ) : (
+                      <Mail className="w-4 h-4" />
+                    )}
                   </Button>
                   <Button
                     size="sm"
@@ -90,6 +125,7 @@ export function ClientesTable({ clientes, onDelete, onViewDetail }: ClientesTabl
                   <Button
                     size="sm"
                     variant="ghost"
+                    onClick={() => onEdit?.(cliente)}
                     title="Editar"
                     className="h-8 w-8 p-0 text-blue-600 hover:bg-blue-100 dark:hover:bg-blue-900/20"
                   >

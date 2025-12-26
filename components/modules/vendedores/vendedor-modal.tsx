@@ -6,6 +6,7 @@ import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
 import { X } from "lucide-react"
 import type { Sucursal } from "@/types"
+import { toast } from "sonner"
 
 interface VendedorModalProps {
   isOpen: boolean
@@ -51,7 +52,7 @@ export function VendedorModal({ isOpen, onClose, onSubmit, vendedor, sucursales 
     e.preventDefault()
 
     if (!formData.nombre.trim() || !formData.apellido.trim() || !formData.email.trim() || !formData.whatsapp.trim()) {
-      alert("Por favor completa todos los campos")
+      toast.error("Por favor completa todos los campos")
       return
     }
 

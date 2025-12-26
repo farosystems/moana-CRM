@@ -188,6 +188,196 @@ export const paquetesQueries = {
 
     if (error) throw error
   },
+
+  // Verificar disponibilidad de stock para un tipo de paquete
+  verificarStock: async (paqueteId: string, tipoPaqueteNombre: string) => {
+    const { data, error } = await supabase
+      .from('paquetes')
+      .select('stock_vuelos, stock_hospedaje')
+      .eq('id', paqueteId)
+      .single()
+
+    if (error) throw error
+
+    const stockDisponible = {
+      vuelos: data.stock_vuelos || 0,
+      hospedaje: data.stock_hospedaje || 0,
+    }
+
+    // Validar según el tipo de paquete
+    switch (tipoPaqueteNombre) {
+      case 'Solo Vuelo':
+        return {
+          disponible: stockDisponible.vuelos > 0,
+          stockVuelos: stockDisponible.vuelos,
+          stockHospedaje: stockDisponible.hospedaje,
+          mensaje: stockDisponible.vuelos > 0
+            ? `Stock disponible: ${stockDisponible.vuelos} vuelo(s)`
+            : 'No hay stock disponible para vuelos',
+        }
+      case 'Solo Hospedaje':
+        return {
+          disponible: stockDisponible.hospedaje > 0,
+          stockVuelos: stockDisponible.vuelos,
+          stockHospedaje: stockDisponible.hospedaje,
+          mensaje: stockDisponible.hospedaje > 0
+            ? `Stock disponible: ${stockDisponible.hospedaje} cama(s)`
+            : 'No hay stock disponible para hospedaje',
+        }
+      case 'Vuelo + Hospedaje':
+        return {
+          disponible: stockDisponible.vuelos > 0 && stockDisponible.hospedaje > 0,
+          stockVuelos: stockDisponible.vuelos,
+          stockHospedaje: stockDisponible.hospedaje,
+          mensaje: stockDisponible.vuelos > 0 && stockDisponible.hospedaje > 0
+            ? `Stock disponible: ${stockDisponible.vuelos} vuelo(s) y ${stockDisponible.hospedaje} cama(s)`
+            : stockDisponible.vuelos === 0 && stockDisponible.hospedaje === 0
+            ? 'No hay stock disponible para vuelos ni hospedaje'
+            : stockDisponible.vuelos === 0
+            ? 'No hay stock disponible para vuelos'
+            : 'No hay stock disponible para hospedaje',
+        }
+      default:
+        return {
+          disponible: false,
+          stockVuelos: stockDisponible.vuelos,
+          stockHospedaje: stockDisponible.hospedaje,
+          mensaje: 'Tipo de paquete no válido',
+        }
+    }
+  },
+
+  // Decrementar stock al crear un lead
+  decrementarStock: async (paqueteId: string, tipoPaqueteNombre: string) => {
+    // Primero obtener el stock actual
+    const { data: paquete, error: fetchError } = await supabase
+      .from('paquetes')
+      .select('stock_vuelos, stock_hospedaje')
+      .eq('id', paqueteId)
+      .single()
+
+    if (fetchError) throw fetchError
+
+    let updates: any = {}
+
+    // Determinar qué stock decrementar según el tipo
+    switch (tipoPaqueteNombre) {
+      case 'Solo Vuelo':
+        if ((paquete.stock_vuelos || 0) <= 0) {
+          throw new Error('No hay stock disponible para vuelos')
+        }
+        updates.stock_vuelos = (paquete.stock_vuelos || 0) - 1
+        break
+      case 'Solo Hospedaje':
+        if ((paquete.stock_hospedaje || 0) <= 0) {
+          throw new Error('No hay stock disponible para hospedaje')
+        }
+        updates.stock_hospedaje = (paquete.stock_hospedaje || 0) - 1
+        break
+      case 'Vuelo + Hospedaje':
+        if ((paquete.stock_vuelos || 0) <= 0 || (paquete.stock_hospedaje || 0) <= 0) {
+          throw new Error('No hay stock disponible para vuelo y/o hospedaje')
+        }
+        updates.stock_vuelos = (paquete.stock_vuelos || 0) - 1
+        updates.stock_hospedaje = (paquete.stock_hospedaje || 0) - 1
+        break
+      default:
+        throw new Error('Tipo de paquete no válido')
+    }
+
+    // Actualizar el stock
+    const { data, error } = await supabase
+      .from('paquetes')
+      .update(updates)
+      .eq('id', paqueteId)
+      .select()
+      .single()
+
+    if (error) throw error
+    return data
+  },
+
+  // Incrementar stock al eliminar/cancelar un lead
+  incrementarStock: async (paqueteId: string, tipoPaqueteNombre: string) => {
+    // Primero obtener el stock actual
+    const { data: paquete, error: fetchError } = await supabase
+      .from('paquetes')
+      .select('stock_vuelos, stock_hospedaje')
+      .eq('id', paqueteId)
+      .single()
+
+    if (fetchError) throw fetchError
+
+    let updates: any = {}
+
+    // Determinar qué stock incrementar según el tipo
+    switch (tipoPaqueteNombre) {
+      case 'Solo Vuelo':
+        updates.stock_vuelos = (paquete.stock_vuelos || 0) + 1
+        break
+      case 'Solo Hospedaje':
+        updates.stock_hospedaje = (paquete.stock_hospedaje || 0) + 1
+        break
+      case 'Vuelo + Hospedaje':
+        updates.stock_vuelos = (paquete.stock_vuelos || 0) + 1
+        updates.stock_hospedaje = (paquete.stock_hospedaje || 0) + 1
+        break
+      default:
+        throw new Error('Tipo de paquete no válido')
+    }
+
+    // Actualizar el stock
+    const { data, error } = await supabase
+      .from('paquetes')
+      .update(updates)
+      .eq('id', paqueteId)
+      .select()
+      .single()
+
+    if (error) throw error
+    return data
+  },
+}
+
+// ============================================
+// TIPOS DE PAQUETE
+// ============================================
+
+export const tiposPaqueteQueries = {
+  // Obtener todos los tipos de paquete
+  getAll: async () => {
+    const { data, error } = await supabase
+      .from('tipos_de_paquete')
+      .select('*')
+      .order('nombre', { ascending: true })
+
+    if (error) throw error
+    return data || []
+  },
+
+  // Obtener tipo de paquete por ID
+  getById: async (id: string) => {
+    const { data, error } = await supabase
+      .from('tipos_de_paquete')
+      .select('*')
+      .eq('id', id)
+      .single()
+
+    if (error) throw error
+    return data
+  },
+
+  // Obtener tipo de paquete por nombre
+  getByNombre: async (nombre: string) => {
+    const { data, error } = await supabase
+      .from('tipos_de_paquete')
+      .select('*')
+      .eq('nombre', nombre)
+      .single()
+
+    if (error) throw error
+    return data
+  },
 }
 
 // ============================================
@@ -199,12 +389,26 @@ export const clientesQueries = {
   getAll: async () => {
     const { data, error } = await supabase
       .from('clientes')
-      .select('*')
+      .select(`
+        *,
+        vendedor:vendedor_id (
+          id,
+          nombre,
+          apellido
+        )
+      `)
       .eq('activo', true)
       .order('created_at', { ascending: false })
 
     if (error) throw error
-    return data as Cliente[]
+
+    // Mapear los datos para incluir el nombre del vendedor
+    const clientesConDatos = data?.map((cliente: any) => ({
+      ...cliente,
+      vendedorAsignado: cliente.vendedor ? `${cliente.vendedor.nombre} ${cliente.vendedor.apellido}` : '-',
+    })) || []
+
+    return clientesConDatos as Cliente[]
   },
 
   // Obtener cliente por ID con historial
@@ -296,6 +500,11 @@ export const leadsQueries = {
           nombre,
           apellido
         ),
+        vendedor_colaborador:vendedor_colaborador_id (
+          id,
+          nombre,
+          apellido
+        ),
         paquete:paquete_sugerido_id (
           id,
           nombre
@@ -310,6 +519,7 @@ export const leadsQueries = {
     const leadsConDatos = data?.map((lead: any) => ({
       ...lead,
       vendedorAsignado: lead.vendedor ? `${lead.vendedor.nombre} ${lead.vendedor.apellido}` : '-',
+      vendedorColaborador: lead.vendedor_colaborador ? `${lead.vendedor_colaborador.nombre} ${lead.vendedor_colaborador.apellido}` : '-',
       tipoConsulta: lead.tipo_consulta,
       paqueteSugerido: lead.paquete?.nombre || '-',
       notasInternas: lead.notas_internas,
@@ -538,5 +748,101 @@ export const sucursalesQueries = {
       .eq('id', id)
 
     if (error) throw error
+  },
+}
+
+// ============================================
+// ACOMPAÑANTES
+// ============================================
+
+export const acompanantesQueries = {
+  // Obtener todos los acompañantes de un lead
+  getByLeadId: async (leadId: string) => {
+    const { data, error } = await supabase
+      .from('acompanantes')
+      .select('*')
+      .eq('lead_id', leadId)
+      .order('created_at', { ascending: true })
+
+    if (error) throw error
+    return data || []
+  },
+
+  // Crear acompañante
+  create: async (acompanante: any) => {
+    const { data, error } = await supabase
+      .from('acompanantes')
+      .insert(acompanante)
+      .select()
+      .single()
+
+    if (error) throw error
+    return data
+  },
+
+  // Actualizar acompañante
+  update: async (id: string, updates: any) => {
+    const { data, error } = await supabase
+      .from('acompanantes')
+      .update(updates)
+      .eq('id', id)
+      .select()
+      .single()
+
+    if (error) throw error
+    return data
+  },
+
+  // Eliminar acompañante
+  delete: async (id: string) => {
+    const { error } = await supabase
+      .from('acompanantes')
+      .delete()
+      .eq('id', id)
+
+    if (error) throw error
+  },
+
+  // Guardar múltiples acompañantes (crear/actualizar/eliminar)
+  saveAll: async (leadId: string, acompanantes: any[], acompanantesOriginales: any[]) => {
+    // Obtener IDs de acompañantes actuales y originales
+    const idsActuales = acompanantes.filter(a => a.id).map(a => a.id)
+    const idsOriginales = acompanantesOriginales.map(a => a.id)
+
+    // Eliminar acompañantes que ya no están
+    const idsAEliminar = idsOriginales.filter(id => !idsActuales.includes(id))
+    for (const id of idsAEliminar) {
+      await acompanantesQueries.delete(id)
+    }
+
+    // Crear o actualizar acompañantes
+    const resultados: any[] = []
+    for (const acompanante of acompanantes) {
+      // Solo guardar si tiene al menos nombre o apellido
+      if (!acompanante.nombre && !acompanante.apellido) continue
+
+      if (acompanante.id) {
+        // Actualizar existente
+        const { id, ...updates } = acompanante
+        const resultado = await acompanantesQueries.update(id, updates)
+        resultados.push(resultado)
+      } else {
+        // Crear nuevo
+        const nuevoAcompanante = {
+          lead_id: leadId,
+          nombre: acompanante.nombre || '',
+          apellido: acompanante.apellido || '',
+          documento: acompanante.documento || null,
+          email: acompanante.email || null,
+          telefono: acompanante.telefono || null,
+          direccion: acompanante.direccion || null,
+          edad: acompanante.edad || null,
+        }
+        const resultado = await acompanantesQueries.create(nuevoAcompanante)
+        resultados.push(resultado)
+      }
+    }
+
+    return resultados
   },
 }
